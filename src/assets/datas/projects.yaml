@@ -1,0 +1,218 @@
+-
+  slug: wiismile
+  title: WiiSmile
+  pitch: Le comité d'entreprise externalisé pour TPE & PME
+  url: "https://monentreprise.wiismile.fr"
+  technologies: [Symfony 5, Doctrine, VueJs, Bootstrap, Elasticsearch, Api REST, Architecture hexagonale]
+  description: |
+    Créée en 2001 et forte de ses 130 collaborateurs à ce jour, la société WiiSmile a l'ambition de **permettre à
+    toute TPE/PME de proposer à ses salariés des avantages équivalents à ceux d’un grand groupe.** 💪
+
+    Pour cela, WiiSmile met à disposition plusieurs outils de récompense, motivation et fidélisation des salariés :
+    versement de chèques cadeaux, versement de subventions, catalogue de produits et services à tarifs négociés,
+    titres restaurant... **L'ensemble de ces servives sont pilotables en ligne !**
+  contribution: |
+    Depuis quelques années, WiiSmile a décidé d'améliorer la digitalisation de ses offres en permettant à ses clients
+    de consulter & gérer l'ensemble de leurs services en ligne. C'est dans ce contexte que j'interviens depuis 2018
+    au sein du service informatique pour apporter mon expertise Symfony/VueJs sur le développements de plusieurs
+    applications web :
+    - un **espace client en ligne** permettant aux employeurs et salariés de piloter les différentes offres de
+    services proposées par WiiSmile.
+    - un **backoffice** permettant aux collaborateurs WiiSmile (responsable relation client, conseillers B2C,
+    comptabilité, ADV...) de consulter et gérer les données des adhérents.
+
+-
+  slug: mon-petit-placement
+  title: Mon Petit Placement
+  pitch: La plateforme qui donne accès aux jeunes actifs à des produits d’investissement haut de gamme.
+  url: "https://monpetitplacement.fr"
+  technologies: [Symfony 4, API Rest, Signature électronique, PhpUnit]
+  description: |
+    Mon Petit Placement est une plateforme visant à améliorer les habitudes des jeunes actifs (25 - 40 ans)
+    en termes d'épargne en les aidant à prendre en main leur avenir financier.
+
+    Après avoir remplis un Questionnaire de Connaissance Client, un prospect reçoit un conseil d'investissement en
+    fonction de son profil et du niveau de risque souhaité. Il peut ensuite déposer une certaine somme et suivre
+    l'évolution de son placement.
+  contribution: |
+    Pendants plusieurs mois, j'ai rejoint l'équipe de Square Glasses, agence web lyonnaise, pour participer
+    au **développement de diverses fonctionnalités** sur la plateforme Mon Petit Placement : pages CMS, module de
+    simulations d'investissement, présentations des portefeuilles d'investissement, espace client de gestion du
+    profil client et de ses investissements, génération de documents, signature éléctronique...
+
+    En complément du développement de ces fonctionnalités, je suis aussi intervenu sur la **mise en place de tests
+    unitaires** sur des parties critiques du projet : calculs de performance d'un placement financier, gestion de
+    la facturation en fonction de la performance d'investissement...
+
+-
+  slug: klapp
+  title: Klapp.io
+  pitch: Klapp est une plateforme SaaS permettant aux entrepreneurs un accès à un catalogue de logiciels au sein d'un abonnement centralisé
+  technologies: [Symfony 4, Doctrine, Vue.Js, Bootstrap, API Rest]
+  description: |
+    Le projet Klapp.io est né du constat qu' il était difficile pour les entrepreneurs et indépendants de s’équiper convenablement
+    de logiciels professionnels, par manque de budget ou méconnaissance des outils correspondant à leur activité.
+
+    C'est en 2017 que la première version de Klapp.io voit le jour avec l'objectif de **proposer aux entrepreneurs d'accéder
+    à un catalogue d'applications SaaS à prix réduit, et cela au sein d'un abonnement mensuel centralisé.** Klapp est le Netflix du
+    logiciel. 😉
+
+    Le projet Klapp.io intrigue pas mal d'entrepreneurs par son modèle innovant de distribution et très vite une communauté d'utilisateurs
+    se créée autour du projet. Séduit par le concept, la Banque Publique d'Investissement française investit dans le projet
+    afin de l'accompagner dans son développement.
+  contribution: |
+    En tant que fondateur, j'ai pu concevoir le projet dans sa globalité, **de son idéation à sa commercialisation en passant par sa conception
+    technique & graphique**. Le projet est organisé en **plusieurs briques applicatives** : le site web public (Symfony 3), le blog (Wordpress), le
+    Backend/API Rest (Symfony 4) et l'espace client (VueJs). L'ensemble est déployé dans des containers Docker sur un serveur dédié.
+
+    Pour gérer **les abonnements** aux logiciels et leur facturation, je me suis appuyé sur le **compsant Workflow de Symfony** afin de déclencher
+    des actions bien précises en fonction de l'avancé de l'abonnement. Ce workflow était connecté au **sytème de paiement Stripe**
+    via son API et ses webhooks.
+
+    **Un moteur de recherche**, basé sur **Elasticsearch**, a été dévelopé afin de permettre aux utilisateurs de rechercher des logiciels dans
+    le catalogue de Klapp selon des critères bien précis.
+
+-
+  slug: arianespace
+  title: Arianespace
+  pitch: Arianespace est une société française chargée de la commercialisation et de l’exploitation
+    des systèmes de lancement spatiaux développés par ArianeGroup, à savoir les familles
+    de lanceurs Ariane et Vega.
+  technologies: [ Symfony 2, Doctrine ]
+  url: https://www.arianespace.com
+  description: |
+    Le SI de Arianespace est composé de **multiples applications web ayant chacune un
+    périmètre fonctionnel bien précis** : gestion des contrats clients, gestion du
+    personnel, gestion des anomalies techniques...
+  contribution: |
+    En collaboration avec les chefs de projets de la DSI, mes missions ont été d'intervenir
+    dans la conception et le développement de plusieurs de ces applications stratégiques.
+
+    Une attention particulière a été portée concernant **l'architecture fonctionnelle**, la **qualité
+    des livrables** et la **couverture de test** des développements.
+
+    Pour des raisons de confidentialité, je ne peux donner plus de détails sur les
+    développements réalisés chez Arianepace.
+
+-
+  slug: adele
+  title: Adele.org
+  pitch: Adele.org est le spécialiste français du logement étudiant depuis 1997 !
+  technologies: [ Symfony 2, Doctrine, Méthodologie Scrum, Elasticsearch, Workflows ]
+  url: "https://www.adele.org"
+  description: |
+    La plateforme permet aux étudiants de **rechercher un logement en résidence étudiante ou
+    universitaire** dans la ville où ils réalisent leur études.
+
+    Ensuite, ces étudiants peuvent **déposer leur dossier de candidature directement en ligne** sur Adele.org
+    afin de recevoir une réponse en ligne rapide du propriétaire.
+
+    Le service est entièrement gratuit et sans engagement pour les étudiants.
+  contribution: |
+    J'ai accompagné les équipes d'Adele.org pendant plus d'un an dans la refonte de leur service en
+    ligne et de leur backoffice de gestion de dossiers de locations.
+
+    Je suis intervenu en tant que **Scrum Master** dans le but d'**encadrer les échanges entre les différentes parties prenantes du
+    projet** : client (Product Owner), équipe de développement interne (environ 10 développeurs
+    et 2 designers/intégrateurs), prestataires externes (hébergeur web, partenaires stratégiques,
+    référenceur...).
+
+    De manière ponctuelle, j'ai aussi participé au **développement technique, sur le framework
+    Symfony, de certaines parties de l'application**.
+
+
+-
+  slug: afnic
+  title: Afnic
+  pitch: Afnic - Association Française pour le Nommage Internet en Coopération
+  technologies: [ Symfony 1.4, Doctrine ]
+  url: "https://www.afnic.fr/"
+  description: |
+    L’Afnic est une association loi de 1901, qui a pour mission de **gérer les domaines Internet nationaux de premier niveau**
+    de France, La Réunion, Terres australes et antarctiques françaises, Mayotte, Saint-Pierre-et-Miquelon et Wallis-et-Futuna.
+
+    L'Afnic se définit également comme fournisseur de solutions techniques et de services de registre,
+    elle est notamment **le partenaire technique de nouveaux domaines génériques** dont le .paris, le .bzh, le .alsace, le .ovh.
+
+    En 2013, l'Afnic a souhaité refondre son site institutionnel et développer un nouvel extranet
+    a destination de ses partenaires professionnels (Bureaux d'enregistrements).
+  contribution: |
+    En étroite collaboration avec les équipes du clients (chef de projet, responsable des opérations...)
+    j'ai été en charge de l'**élaboration des solutions techniques** proposées au client
+    ainsi que du **pilotage des équipes de développement** (développeurs, intégrateur...)
+
+    L'un des plus gros challenge de ce projet a été la **gestion d'environnements
+    contextualisés** (gestion dynamique des fonctionnalités, charte graphique personnalisé)
+    et la mise en place de l'architecture technique correspondante au sein du framework Symfony.
+
+-
+  slug: servistreet
+  title: Servistreet.com
+  pitch: |
+    ServiStreet.com est une plateforme collaborative d’échange de services entre voisins : jardinage, bricolage,
+    babysitting, tâches ménagères...
+  technologies: [Symfony, Doctrine, ElasticSearch, jQuery, Bootstrap]
+  description: |
+    *Vous souhaitez faire réaliser des travaux chez vous, des tâches ménagères, faire garder votre animal en votre
+    absence… mais vous n’en avez pas forcément le temps, le matériel nécessaire, les compétences ou bien même
+    tout simplement l’envie ! Et si des personnes proches de chez vous pouvaient vous aider ?*
+
+    ServiStreet.com permet de répondre parfaitement à cette problématique en invitant les utilisateurs à déposer,
+    **gratuitement et en 3 minutes chrono, une annonce de mission**.
+  contribution: |
+    Né en 2014, ce projet entrepreneurial m'a permis de gérer la conception technique d'une plateforme web dans sa
+    globalité, allant de la mise en oeuvre de l'architecture logiciel, au déploiement en production sur un serveur.
+
+    Pendant plusieurs mois, le projet a été épaulé par le programme Lyon Startup qui permet d'accompagner les
+    porteurs de projet dans la maturation de leurs idées et leur mise en oeuvre.
+    Ce projet m'a aussi permis de découvrir les aspects extérieurs au développement applicatif : étude de marché,
+    communication/marketing, recherche de financements...
+
+-
+  slug: ritme
+  title: Ritme
+  pitch: Société spécialisée dans la distribution de logiciels scientifiques
+  technologies: [Symfony 1.4, Doctrine, jQuery, E-commerce, Paiement Atos, CMS]
+  description: |
+    Ritme distribue de nombreux logiciels dans les domaines scientifiques. Afin d'accélérer son développement,
+    l'entreprise a décidé de confier à un prestataire de développement web **la réalisation d'une nouvelle
+    plateforme permettant d'exposer ses produits, promouvoir ses services de formations et de support**.
+  contribution: |
+    En tant que lead développeur sur ce projet, j'ai accompagné le client dès le départ dans la **structuration globale
+    de son projet web** et des différentes parties applicatives qu'il souhaitait mettre en place.
+
+    Accompagné d'un autre
+    développeur, d'une designeuse/intégratrice, j'ai pu développer **les fiches produits des logiciels distribués** ainsi
+    que tout le **workflow de gestion de commande** (panier, commande, paiement, suivi...).
+
+-
+  slug: gdf-suez
+  title: GDF Suez
+  pitch: Développement de multiples plateformes dédiées à la clientèle professionnelle
+  technologies: [Symfony 1.4, Symfony 2, Doctrine]
+  description: |
+    GDF Suez, rebaptisé « Engie » en avril 2015, est un groupe électro-gazier français.
+
+    Son activité porte majoritairement sur **l’approvisionnement, le transport, le stockage
+    et la distribution de gaz naturel aux consommateurs**.
+
+    En 2012, GDF Suez a souhaité refondre et **développer une dizaine d'applications métiers**
+    dédiées à sa clientèle professionnelle (suivi des contrats, suivi de consommation...).
+  contribution: |
+    En collaboration avec la DSI de Gdf Suez et particulièrement les experts métiers
+    (Product Owner), je suis intervenu sur la **rédaction de spécifications techniques & fonctionnelles**
+    à destination des équipes de développement.
+
+    En parallèle, j'ai aussi accompagné GDF Suez sur **les développements techniques de
+    nombreuses fonctionnalités** au sein du SI:
+      - Mise en place d'un espace client sécurisé
+      - Intérrogation de webservices SOAP et restitution de données statistiques (tableaux & graphiques)
+      - Développement d'un CMS personnalisé avec gestion des publications versionnées
+      - Mise en place d'un moteur de recherche sémantique
+      - etc.
+
+#Vaincre la mucoviscidose - CF Experts
+#Tombola Directe
+#Profideo - La tribune de l'Assurance
+#Ritme
+#Time Sport International
