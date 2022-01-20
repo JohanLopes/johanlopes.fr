@@ -13,8 +13,13 @@
 
 <script>
 export default {
-  name: "Project",
-  props: ["project"],
+  name: "IndexProjectsItem",
+  props: {
+    project: {
+      type: Object,
+      required: true,
+    },
+  },
   computed: {
     pictureUrl: function () {
       return require("../assets/datas/projects/pictures-sm/" +
@@ -27,8 +32,8 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/scss/variables";
-@import "~@fortawesome/fontawesome-free/scss/functions";
-@import "~@fortawesome/fontawesome-free/scss/variables";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/functions";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/variables";
 
 .project {
   position: relative;

@@ -11,11 +11,11 @@
       </h5>
 
       <div class="d-flex justify-content-center flex-wrap mt-5">
-        <projects-item
+        <index-projects-item
           v-for="project in projects"
           :key="project.slug"
           :project="project"
-        ></projects-item>
+        ></index-projects-item>
       </div>
     </div>
 
@@ -29,12 +29,12 @@
 
 <script>
 import projectsCollection from "../assets/datas/projects.yaml";
-import ProjectsItem from "./ProjectsItem";
+import IndexProjectsItem from "./IndexProjectsItem";
 
 export default {
-  name: "Projects",
+  name: "IndexProjects",
   components: {
-    ProjectsItem,
+    IndexProjectsItem,
   },
   data: function () {
     return {

@@ -1,13 +1,13 @@
 <template>
-  <div class="aside mw-100" v-on:keyup.esc="$router.push({ name: 'index' })">
+  <div class="aside mw-100" @keyup.esc="$router.push({ name: 'index' })">
     <div class="aside-header d-flex align-items-center p-2 px-4">
       <router-link
         :to="
-          this.previousProjectSlug
-            ? { name: 'project', params: { slug: this.previousProjectSlug } }
-            : { path: this.$route.fullPath }
+          previousProjectSlug
+            ? { name: 'project', params: { slug: previousProjectSlug } }
+            : { path: $route.fullPath }
         "
-        :class="{ disabled: !this.previousProjectSlug }"
+        :class="{ disabled: !previousProjectSlug }"
         class="btn btn-sm btn-outline-secondary"
       >
         <i class="fa fa-chevron-left me-1"></i> Projet précédent
@@ -15,11 +15,11 @@
 
       <router-link
         :to="
-          this.nextProjectSlug
-            ? { name: 'project', params: { slug: this.nextProjectSlug } }
-            : { path: this.$route.fullPath }
+          nextProjectSlug
+            ? { name: 'project', params: { slug: nextProjectSlug } }
+            : { path: $route.fullPath }
         "
-        :class="{ disabled: !this.nextProjectSlug }"
+        :class="{ disabled: !nextProjectSlug }"
         class="btn btn-sm btn-outline-secondary ms-2"
       >
         Projet suivant <i class="fa fa-chevron-right ms-1"></i>
@@ -27,7 +27,6 @@
 
       <router-link
         :to="{ name: 'index' }"
-        tag="button"
         type="button"
         class="aside-close ms-auto"
         aria-label="Close"
@@ -39,7 +38,7 @@
     <div v-if="project" class="aside-content p-4">
       <section class="d-flex align-items-center">
         <div class="flex-shrink-0">
-          <img v-bind:src="logoUrl" class="logo" :alt="project.title" />
+          <img :src="logoUrl" class="logo" :alt="project.title" />
         </div>
         <div class="flex-grow-1 ms-4">
           <h3 class="mb-0">{{ project.title }}</h3>
@@ -57,22 +56,24 @@
         </div>
       </section>
 
+      <!-- eslint-disable vue/no-v-html -->
       <section
         v-if="project.description"
-        v-html="renderDescription"
         class="mt-4"
+        v-html="renderDescription"
       ></section>
 
       <section
         v-if="project.contribution"
-        v-html="renderContribution"
         class="bg-light p-3 mt-4"
+        v-html="renderContribution"
       ></section>
+      <!-- eslint-enable vue/no-v-html -->
 
       <section v-if="project.technologies.length > 0" class="mt-4">
         <span
           v-for="technology in project.technologies"
-          v-bind:key="technology"
+          :key="technology"
           class="d-inline-block mb-1 border-start border-secondary border-2 text-nowrap bg-light px-2 me-1"
           ><i class="fa fa-tag me-1"></i> {{ technology }}</span
         >
@@ -87,17 +88,13 @@ import projectsCollection from "../assets/datas/projects.yaml";
 import { marked } from "marked";
 
 export default {
-  name: "ProjectAside",
+  name: "AsideProjectDetails",
 
   data() {
     return {
       currentIndex: null,
       project: null,
     };
-  },
-
-  created() {
-    this.fetchData();
   },
 
   computed: {
@@ -130,6 +127,10 @@ export default {
         ? projectsCollection[nextIndex].slug
         : null;
     },
+  },
+
+  created() {
+    this.fetchData();
   },
 
   methods: {

@@ -155,7 +155,7 @@
 
 <script>
 export default {
-  name: "Services",
+  name: "IndexServices",
 };
 </script>
 

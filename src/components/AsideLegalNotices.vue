@@ -1,10 +1,9 @@
 <template>
-  <div class="aside mw-100" v-on:keyup.esc="$router.push({ name: 'index' })">
+  <div class="aside mw-100" @keyup.esc="$router.push({ name: 'index' })">
     <div class="aside-header d-flex align-items-center p-2 px-4">
       <h3 class="m-0">Mentions légales</h3>
       <router-link
         :to="{ name: 'index' }"
-        tag="button"
         type="button"
         class="aside-close ms-auto"
         aria-label="Close"
@@ -662,6 +661,6 @@
 
 <script>
 export default {
-  name: "legal-notices",
+  name: "AsideLegalNotices",
 };
 </script>

@@ -2,11 +2,11 @@
   <section id="customers" class="bg-light d-none d-md-block">
     <div class="p-3 d-flex flex-wrap align-items-center justify-content-center">
       <img
+        v-for="(name, slug) in customers"
+        :key="slug"
         :src="logoUrl(slug)"
         :alt="name"
-        :key="slug"
         class="px-3"
-        v-for="(name, slug) in customers"
       />
     </div>
     <div class="customers-explanation d-none d-lg-block">
@@ -19,7 +19,7 @@
 import customersCollection from "../assets/datas/customers.yml";
 
 export default {
-  name: "Customers",
+  name: "IndexCustomers",
   data: function () {
     return {
       customers: customersCollection,

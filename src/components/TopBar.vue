@@ -12,13 +12,13 @@
         >
       </h1>
 
-      <button class="navbar-toggler" type="button" @click="this.toggleMenu">
+      <button class="navbar-toggler" type="button" @click="toggleMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div
         class="navbar-collapse collapse"
-        :class="{ show: this.showMenuCollapsed }"
+        :class="{ show: showMenuCollapsed }"
       >
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
@@ -65,8 +65,23 @@ export default {
       showMenuCollapsed: false,
     };
   },
+  computed: {
+    classObject: function () {
+      return {
+        "fixed-top": this.fixed,
+        "navbar-light": this.fixed,
+        "navbar-dark": !this.fixed,
+      };
+    },
+  },
   mounted() {
     this.affixTopbar();
+  },
+  beforeMount() {
+    window.addEventListener("scroll", this.affixTopbar);
+  },
+  beforeUnmount() {
+    window.removeEventListener("scroll", this.affixTopbar);
   },
   methods: {
     affixTopbar() {
@@ -78,21 +93,6 @@ export default {
     toggleMenu() {
       this.showMenuCollapsed = !this.showMenuCollapsed;
     },
-  },
-  computed: {
-    classObject: function () {
-      return {
-        "fixed-top": this.fixed,
-        "navbar-light": this.fixed,
-        "navbar-dark": !this.fixed,
-      };
-    },
-  },
-  beforeMount() {
-    window.addEventListener("scroll", this.affixTopbar);
-  },
-  beforeUnmount() {
-    window.removeEventListener("scroll", this.affixTopbar);
   },
 };
 </script>

@@ -37,10 +37,10 @@
               <a
                 href="#"
                 title="TikTok"
-                @click.prevent="showTiktokLol = true"
                 class="text-decoration-none"
+                @click.prevent="showTiktokLol = true"
               >
-                <span class="fs-3" v-if="showTiktokLol">😂</span>
+                <span v-if="showTiktokLol" class="fs-3">😂</span>
                 <i v-else class="fab fa-2x text-white fa-tiktok"></i>
               </a>
             </li>
@@ -49,7 +49,7 @@
         <div class="col-12 col-lg-3 border-lg-start mt-4 mt-lg-0 text-center">
           <p class="font-weight-light text-nowrap">Directement par tchat</p>
 
-          <button class="btn btn-secondary text-white" v-on:click="openChatbox">
+          <button class="btn btn-secondary text-white" @click="openChatbox">
             <i class="fa fa-microphone-alt me-2"></i> Discuter maintenant avec
             Johan
           </button>
@@ -61,7 +61,7 @@
 
 <script>
 export default {
-  name: "Contact",
+  name: "IndexContact",
   data() {
     return {
       showTiktokLol: false,
