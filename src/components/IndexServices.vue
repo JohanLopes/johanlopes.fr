@@ -17,9 +17,10 @@
           <div class="card h-100">
             <div class="card-body pb-0 text-center">
               <img
-                src="../assets/images/scrum.svg"
-                class="h-100"
-                alt="Gestion de projet"
+                src="../assets/images/conception.svg"
+                class="mw-100"
+                style="height: 300px"
+                alt="Conception"
               />
             </div>
             <div class="card-body h-100">
@@ -34,6 +35,11 @@
                 veille à ce que son équipe soit
                 <strong>organisée et alignée sur des objectifs communs</strong>.
               </p>
+              <p class="card-text text-body">
+                Aussi, j'aide les développeurs a monter en compétence sur les
+                <strong>bonnes pratiques</strong> et sur la livraison de
+                <strong>code qualitatif</strong>.
+              </p>
             </div>
           </div>
         </div>
@@ -41,13 +47,20 @@
           <div class="card h-100">
             <div class="card-body pb-0 text-center">
               <img
-                src="../assets/images/symfony.svg"
-                class="h-100"
-                alt="Symfony"
+                src="../assets/images/backend.svg"
+                class="mw-100"
+                style="height: 300px"
+                alt="Développement backend"
               />
             </div>
             <div class="card-body h-100">
               <h3 class="card-title text-center">Développement Backend</h3>
+              <img
+                src="../assets/images/symfony.svg"
+                class="float-end"
+                width="70"
+                alt="Symfony"
+              />
               <p class="card-text text-body">
                 Adepte du framework
                 <a href="https://symfony.com" target="_blank">Symfony</a> depuis
@@ -63,6 +76,12 @@
                 répondent parfaitement à
                 <strong>vos contraintes métiers</strong>.
               </p>
+              <p class="card-text text-body">
+                Quand le projet s'y prête je construis l'application autour des
+                concepts d'<strong>architecture hexagonale</strong> et de
+                <strong><abbr title="Domain Driven Design">DDD</abbr></strong
+                >.
+              </p>
             </div>
           </div>
         </div>
@@ -70,13 +89,20 @@
           <div class="card h-100">
             <div class="card-body pb-0 text-center">
               <img
-                src="../assets/images/vuejs.svg"
-                class="h-100"
-                alt="Vue.js"
+                src="../assets/images/frontend.svg"
+                style="height: 300px"
+                class="mw-100"
+                alt="Développement frontend"
               />
             </div>
             <div class="card-body h-100">
               <h3 class="card-title text-center">Développement Frontend</h3>
+              <img
+                src="../assets/images/vuejs.svg"
+                class="float-end"
+                width="70"
+                alt="Vue.js"
+              />
               <p class="card-text text-body">
                 Depuis {{ new Date().getFullYear() - 2016 }} ans, je vous
                 propose aussi des interfaces utilisateurs plus dynamiques,
@@ -100,49 +126,42 @@
 
       <div class="card">
         <div class="card-body h-100">
-          <h3 class="card-title text-center">Mais aussi...</h3>
+          <h3 class="card-title text-center">Et aussi...</h3>
           <div class="row">
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-lg-6">
               <div class="d-flex align-items-center mt-2 mt-lg-0">
                 <img
-                  class="me-3"
-                  src="../assets/images/html5-css.svg"
-                  width="50"
-                  alt="Generic placeholder image"
+                  class="me-3 mh-100"
+                  src="../assets/images/audit.svg"
+                  style="height: 180px"
+                  alt="Audit technique"
                 />
                 <div>
-                  <h4 class="mt-0 mb-0">Intégration HTML5/CSS3</h4>
+                  <h4 class="mt-0 mb-0">Audit technique</h4>
                   <p class="text-body mb-0">
-                    Bootstrap framework, Sass, Webpack
+                    Mes années d'expériences me permettent aujourd'hui de
+                    prendre du recul par rapport à votre projet, de l'analyser
+                    dans sa globalité et ensuite de vous soumettre des pistes de
+                    réflexion et d'amélioration de l'éxistant.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-lg-6">
               <div class="d-flex align-items-center mt-2 mt-lg-0">
                 <img
-                  class="me-3"
-                  src="../assets/images/wireframes.png"
-                  width="50"
-                  alt="Generic placeholder image"
-                />
-                <div>
-                  <h4 class="mt-0 mb-0">Prototypage / Ergonomie</h4>
-                  <p class="text-body mb-0">Wireframe, UX</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lg-4">
-              <div class="d-flex align-items-center mt-2 mt-lg-0">
-                <img
-                  class="me-3"
-                  src="../assets/images/docker.svg"
-                  width="50"
-                  alt="Generic placeholder image"
+                  class="me-3 mh-100"
+                  src="../assets/images/automation.svg"
+                  style="height: 180px"
+                  alt="Audit technique"
                 />
                 <div>
                   <h4 class="mt-0 mb-0">Déploiement / Automatisation</h4>
-                  <p class="text-body mb-0">Docker, Gitlab CI/CD, Deployer</p>
+                  <p class="text-body mb-0">
+                    Je vous accompagne dans la mise en place de processus
+                    industrialisés grâce à différents outils de
+                    provisioning/conteneurisation, de CI/CD, de déploiement...
+                  </p>
                 </div>
               </div>
             </div>

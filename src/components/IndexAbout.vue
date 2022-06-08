@@ -5,7 +5,7 @@
 
       <div class="row">
         <div class="col pt-4">
-          <div class="d-flex align-items-start mb-4">
+          <div class="d-flex align-items-start mb-5">
             <img
               src="../assets/images/icons8-germer-96.png"
               class="px-3"
@@ -15,22 +15,21 @@
               <p class="text-justify">
                 Après un cursus universitaire en informatique, je fais mes
                 premières expériences professionnelles dans des agences web où
-                j'ai pu développer mes compétences sur le
-                <em>language PHP</em> mais surtout rapidement me spécialiser sur
-                le <strong>framework Symfony</strong> (depuis la version 1.1).
+                j'ai pu faire évoluer mes compétences sur le
+                <em>language PHP</em> mais, surtout, rapidement me spécialiser
+                sur le <strong>framework Symfony</strong> (depuis sa version 1.1).
               </p>
               <p class="text-justify mb-0">
-                Adepte de la gestion de projets et de la relation client, j'ai
-                pu
+                Durant ces années, j'ai
                 <strong
-                  >piloter de nombreux projets de différentes envergures pour
-                  des TPE/PME, Startups et Grands comptes.</strong
+                  >piloté de nombreux projets de différentes envergures pour des
+                  TPE/PME, Startups et Grands comptes.</strong
                 >
               </p>
             </div>
           </div>
 
-          <div class="d-flex align-items-start mb-4">
+          <div class="d-flex align-items-start mb-5">
             <img
               src="../assets/images/icons8-outils-administratifs-96.png"
               alt="Entrepreneuriat"
@@ -39,12 +38,10 @@
             <div>
               <p class="text-justify">
                 En 2015,
-                <strong
-                  >je me lance dans l'entrepreneuriat et l'innovation</strong
-                >
+                <strong>je me lance dans l'entrepreneuriat</strong>
                 pour me consacrer à la création d'une marketplace permettant aux
                 entrepreneurs de s'équiper de logiciel SaaS au sein d'un
-                abonnement unique. #LeNetflixDesEntrepreneurs
+                abonnement unique. <span class="text-muted">#LeNetflixDesEntrepreneurs</span>
               </p>
               <p class="text-justify mb-0">
                 Accompagné par plusieurs structures d'aide aux startups (Lyon
@@ -57,7 +54,7 @@
             </div>
           </div>
 
-          <div class="d-flex align-items-start mb-4">
+          <div class="d-flex align-items-start mb-5">
             <img
               src="../assets/images/icons8-petite-entreprise-96.png"
               alt="Freelancing"

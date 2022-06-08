@@ -655,6 +655,14 @@
 
       <h4>Crédits :</h4>
       <p class="mb-0 me-auto">Icônes par Icons8</p>
+      <p class="mb-0 me-auto">
+        Illustrations par
+        <a
+          href="https://www.freepik.com/vectors/graphic-design"
+          class="text-decoration-none mb-0 me-2"
+          title="Copyright"
+        >storyset | Freepik</a>
+      </p>
     </div>
   </div>
 </template>
