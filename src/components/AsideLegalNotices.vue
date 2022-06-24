@@ -661,7 +661,8 @@
           href="https://www.freepik.com/vectors/graphic-design"
           class="text-decoration-none mb-0 me-2"
           title="Copyright"
-        >storyset | Freepik</a>
+          >storyset | Freepik</a
+        >
       </p>
     </div>
   </div>

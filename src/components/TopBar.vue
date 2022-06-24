@@ -2,15 +2,11 @@
   <nav id="topbar" class="navbar navbar-expand-md" :class="classObject">
     <div class="container">
       <router-link :to="{ name: 'index' }" class="navbar-brand">
-        <img src="../assets/images/logo.svg" alt="Johan Lopes" />
+        <img
+          src="../assets/images/logo.svg"
+          alt="Johan Lopes | Concepteur de solutions web Freelance"
+        />
       </router-link>
-
-      <h1 class="navbar-title">
-        Johan LOPES
-        <span class="d-none d-lg-block"
-          ><small>Concepteur de solutions web Freelance</small></span
-        >
-      </h1>
 
       <button class="navbar-toggler" type="button" @click="toggleMenu">
         <span class="navbar-toggler-icon"></span>
@@ -111,7 +107,7 @@ export default {
 
   &.fixed-top {
     position: fixed;
-    box-shadow: 0px 0px 10px 0px #888;
+    box-shadow: 0 0 10px 0 #888;
   }
 
   .navbar-brand {
@@ -148,8 +144,7 @@ export default {
 
     .navbar-brand {
       img {
-        height: 40px;
-        filter: invert(0.3);
+        height: 50px;
       }
     }
 
@@ -174,7 +169,7 @@ export default {
     .navbar-brand {
       img {
         height: 60px;
-        filter: invert(1);
+        filter: brightness(0) invert(1);
         opacity: 0.6;
       }
     }

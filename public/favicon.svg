@@ -2,13 +2,13 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="2250"
+   width="500"
    height="500"
-   viewBox="0 0 595.3125 132.29166"
+   viewBox="0 0 132.29167 132.29166"
    version="1.1"
    id="svg5"
    inkscape:version="1.2 (dc2aeda, 2022-05-15)"
-   sodipodi:docname="logo.svg"
+   sodipodi:docname="favicon.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -28,29 +28,24 @@
      borderlayer="false"
      shape-rendering="auto"
      showguides="true"
-     inkscape:zoom="0.81554946"
-     inkscape:cx="1161.7934"
-     inkscape:cy="318.80347"
+     inkscape:zoom="0.45950711"
+     inkscape:cx="676.81216"
+     inkscape:cy="180.62833"
      inkscape:window-width="3440"
      inkscape:window-height="1332"
      inkscape:window-x="0"
      inkscape:window-y="25"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer1">
+     inkscape:current-layer="g17241">
     <sodipodi:guide
-       position="744.34297,570.4127"
+       position="744.34298,570.41271"
        orientation="1,0"
        id="guide354"
        inkscape:locked="false" />
     <sodipodi:guide
-       position="63.259003,66.085811"
+       position="63.259004,66.085812"
        orientation="0,-1"
        id="guide2125"
-       inkscape:locked="false" />
-    <sodipodi:guide
-       position="173.92824,83.213918"
-       orientation="1,0"
-       id="guide1730"
        inkscape:locked="false" />
   </sodipodi:namedview>
   <defs
@@ -59,44 +54,6 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64.0194px;line-height:1.25;font-family:'Gill Sans';-inkscape-font-specification:'Gill Sans';fill:#44d6c2;fill-opacity:1;stroke:none;stroke-width:0.446886"
-       x="385.35123"
-       y="64.896019"
-       id="text63-3"
-       transform="scale(0.99800848,1.0019955)"><tspan
-         sodipodi:role="line"
-         id="tspan61-8"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:64.0194px;font-family:Galvji;-inkscape-font-specification:'Galvji Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#44d6c2;fill-opacity:1;stroke-width:0.446886"
-         x="385.35123"
-         y="64.896019"><tspan
-           style="fill:#44d6c2;fill-opacity:1"
-           id="tspan1747">LOPES</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64.0194px;line-height:1.25;font-family:'Gill Sans';-inkscape-font-specification:'Gill Sans';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.446886"
-       x="171.90114"
-       y="64.919067"
-       id="text63-3-8"
-       transform="scale(0.99800848,1.0019955)"><tspan
-         sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:64.0194px;font-family:Galvji;-inkscape-font-specification:'Galvji Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#5793e2;fill-opacity:1;stroke-width:0.446886"
-         x="171.90114"
-         y="64.919067"
-         id="tspan2195">Johan</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.1651px;line-height:1.25;font-family:'Gill Sans';-inkscape-font-specification:'Gill Sans';letter-spacing:3.47506px;fill:#c8c8c8;fill-opacity:1;stroke:none;stroke-width:0.405704"
-       x="164.84505"
-       y="111.25584"
-       id="text63-3-1"
-       transform="scale(1.0512852,0.95121667)"><tspan
-         sodipodi:role="line"
-         id="tspan61-8-4"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.1651px;font-family:Noteworthy;-inkscape-font-specification:'Noteworthy Bold';fill:#c8c8c8;fill-opacity:1;stroke-width:0.405704"
-         x="164.84505"
-         y="111.25584">Concepteur de solutions web</tspan></text>
     <g
        id="g17241">
       <path

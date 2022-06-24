@@ -17,7 +17,8 @@
                 premières expériences professionnelles dans des agences web où
                 j'ai pu faire évoluer mes compétences sur le
                 <em>language PHP</em> mais, surtout, rapidement me spécialiser
-                sur le <strong>framework Symfony</strong> (depuis sa version 1.1).
+                sur le <strong>framework Symfony</strong> (depuis sa version
+                1.1).
               </p>
               <p class="text-justify mb-0">
                 Durant ces années, j'ai
@@ -41,7 +42,8 @@
                 <strong>je me lance dans l'entrepreneuriat</strong>
                 pour me consacrer à la création d'une marketplace permettant aux
                 entrepreneurs de s'équiper de logiciel SaaS au sein d'un
-                abonnement unique. <span class="text-muted">#LeNetflixDesEntrepreneurs</span>
+                abonnement unique.
+                <span class="text-muted">#LeNetflixDesEntrepreneurs</span>
               </p>
               <p class="text-justify mb-0">
                 Accompagné par plusieurs structures d'aide aux startups (Lyon
