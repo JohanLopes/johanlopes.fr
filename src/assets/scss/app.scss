@@ -1,11 +1,12 @@
 // Core variables / function / mixins
 @import "~bootstrap/scss/functions";
 @import "variables";
+@import "~bootstrap/scss/maps";
 @import "~bootstrap/scss/mixins";
-@import "~bootstrap/scss/utilities";
-
-// Bootstrap
 @import "~bootstrap/scss/root";
+
+// Bootstrap components
+@import "~bootstrap/scss/utilities";
 @import "~bootstrap/scss/reboot";
 @import "~bootstrap/scss/type";
 @import "~bootstrap/scss/images";
