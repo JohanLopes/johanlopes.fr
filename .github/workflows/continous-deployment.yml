@@ -29,20 +29,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Set up Node.js ⚙️
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: '16.x'
+          node-version: 16
       - name: Install Yarn dependencies
         run: yarn install --frozen-lockfile
       - name: Build Vue application
         run: yarn build
-      - name: Upload the build output
-        uses: actions/upload-artifact@v2
+      - name: Upload the generated build in /dist directory to Github action artifact
+        uses: actions/upload-artifact@v3
         with:
-          name: build-output
-          path: |
-            dist/
-          retention-days: 1
+          name: release
+          path: dist/
+          if-no-files-found: error
 
   deploy:
     name: Deploy generated content
@@ -52,10 +51,10 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Download the build output
-        uses: actions/download-artifact@v2
+      - name: Download the build from Github action artifact
+        uses: actions/download-artifact@v3
         with:
-          name: build-output
+          name: release
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
