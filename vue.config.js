@@ -2,7 +2,7 @@ module.exports = {
   //publicPath: process.env.NODE_ENV === "production" ? "/johanlopes.fr/" : "/",
 
   chainWebpack: (config) => {
-    // GraphQL Loader
+    // Load customers and projects data from YAML
     config.module
       .rule("yaml")
       .test(/\.ya?ml$/)

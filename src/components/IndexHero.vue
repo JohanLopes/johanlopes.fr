@@ -28,7 +28,10 @@ export default {
 @import "../assets/scss/variables";
 
 #hero {
-  background: url("../assets/images/background.jpeg");
+  background-image: image-set(
+    url("../assets/images/background.webp") 1x,
+    url("../assets/images/background.jpeg") 1x
+  );
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;

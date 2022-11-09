@@ -8,7 +8,12 @@
         />
       </router-link>
 
-      <button class="navbar-toggler" type="button" @click="toggleMenu">
+      <button
+        class="navbar-toggler"
+        type="button"
+        title="Menu"
+        @click="toggleMenu"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
 

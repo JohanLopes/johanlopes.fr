@@ -1,13 +1,11 @@
 <template>
   <section id="customers" class="bg-light d-none d-md-block">
     <div class="p-3 d-flex flex-wrap align-items-center justify-content-center">
-      <img
-        v-for="(name, slug) in customers"
-        :key="slug"
-        :src="logoUrl(slug)"
-        :alt="name"
-        class="px-3"
-      />
+      <picture v-for="(name, slug) in customers" :key="slug">
+        <source :srcset="logoUrl(slug, 'webp')" type="image/webp" />
+        <source :srcset="logoUrl(slug, 'png')" type="image/png" />
+        <img :src="logoUrl(slug, 'png')" :alt="name" class="px-3" />
+      </picture>
     </div>
     <div class="customers-explanation d-none d-lg-block">
       Ils m'ont confié leurs projets web 😊
@@ -26,7 +24,8 @@ export default {
     };
   },
   methods: {
-    logoUrl: (slug) => require("../assets/datas/customers/" + slug + ".png"),
+    logoUrl: (slug, format) =>
+      require("../assets/datas/customers/" + slug + "." + format),
   },
 };
 </script>

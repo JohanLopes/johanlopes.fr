@@ -3,7 +3,16 @@
     :to="{ name: 'project', params: { slug: project.slug } }"
     class="project"
   >
-    <img :src="pictureUrl" :alt="project.title" />
+    <picture>
+      <source :srcset="pictureUrl(project.slug, 'webp')" type="image/webp" />
+      <source :srcset="pictureUrl(project.slug, 'png')" type="image/png" />
+      <img
+        :src="pictureUrl(project.slug, 'png')"
+        class="logo"
+        :alt="project.title"
+      />
+    </picture>
+
     <div class="content">
       <h3>{{ project.title }}</h3>
       <span><i class="fa fa-search-plus me-2"></i> Plus de détails</span>
@@ -20,12 +29,9 @@ export default {
       required: true,
     },
   },
-  computed: {
-    pictureUrl: function () {
-      return require("../assets/datas/projects/pictures-sm/" +
-        this.project.slug +
-        ".png");
-    },
+  methods: {
+    pictureUrl: (slug, format) =>
+      require("../assets/datas/projects/pictures-sm/" + slug + "." + format),
   },
 };
 </script>

@@ -97,12 +97,22 @@
             </a>
           </p>
         </div>
-        <div class="col-5 d-none d-lg-block">
-          <img
-            src="../assets/images/johan-lopes.png"
-            class="mw-100 ps-5"
-            alt="Johan LOPES"
-          />
+        <div class="col-5 d-none d-xl-block">
+          <picture>
+            <source
+              srcset="../assets/images/johan-lopes.webp"
+              type="image/webp"
+            />
+            <source
+              srcset="../assets/images/johan-lopes.png"
+              type="image/png"
+            />
+            <img
+              src="../assets/images/johan-lopes.png"
+              alt="Johan LOPES"
+              class="mw-100 ps-5"
+            />
+          </picture>
         </div>
       </div>
     </div>

@@ -38,7 +38,15 @@
     <div v-if="project" class="aside-content p-4">
       <section class="d-flex align-items-center">
         <div class="flex-shrink-0">
-          <img :src="logoUrl" class="logo" :alt="project.title" />
+          <picture>
+            <source :srcset="logoUrl(project.slug, 'webp')" type="image/webp" />
+            <source :srcset="logoUrl(project.slug, 'png')" type="image/png" />
+            <img
+              :src="logoUrl(project.slug, 'png')"
+              class="logo"
+              :alt="project.title"
+            />
+          </picture>
         </div>
         <div class="flex-grow-1 ms-4">
           <h3 class="mb-0">{{ project.title }}</h3>
@@ -110,10 +118,6 @@ export default {
       return marked.parse(this.project.contribution);
     },
 
-    logoUrl() {
-      return require("../assets/datas/projects/logos/" + this.slug + ".png");
-    },
-
     previousProjectSlug() {
       let previousIndex = this.currentIndex - 1;
 
@@ -140,6 +144,8 @@ export default {
       );
       this.project = projectsCollection[this.currentIndex];
     },
+    logoUrl: (slug, format) =>
+      require("../assets/datas/projects/logos/" + slug + "." + format),
   },
 };
 </script>

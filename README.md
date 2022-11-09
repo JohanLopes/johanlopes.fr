@@ -1,4 +1,4 @@
-# johanlopes-vue
+# johanlopes
 
 ## Project setup
 ```
