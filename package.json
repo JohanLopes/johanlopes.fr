@@ -1,6 +1,6 @@
 {
-  "name": "johanlopes-vue",
-  "version": "0.1.0",
+  "name": "johanlopes",
+  "version": "1.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -31,5 +31,9 @@
     "prettier": "^2.2.1",
     "sass": "^1.26.5",
     "sass-loader": "^13.0.2"
+  },
+  "volta": {
+    "node": "18.14.2",
+    "yarn": "4.0.0-rc.39"
   }
 }
