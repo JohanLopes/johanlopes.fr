@@ -6,9 +6,8 @@
           <h4 class="h3 text-white">Vous avez un projet ?</h4>
 
           <p class="text-justify mb-0">
-            Je vous propose d'en discuter quelques instants afin de mieux
-            comprendre votre métier, vos objectifs, vos contraintes et ainsi
-            mieux cerner les contours de votre projet.
+            Je vous propose d'en discuter quelques instants afin de mieux comprendre votre métier,
+            vos objectifs, vos contraintes et ainsi mieux cerner les contours de votre projet.
           </p>
         </div>
         <div class="col-12 col-lg-3 mt-4 mt-lg-0 text-center">
@@ -16,20 +15,12 @@
 
           <ul class="list-inline mb-0 text-nowrap">
             <li class="list-inline-item mx-3">
-              <a
-                href="https://fr.linkedin.com/in/lopesjohan"
-                target="_blank"
-                title="LinkedIn"
-              >
+              <a href="https://fr.linkedin.com/in/lopesjohan" target="_blank" title="LinkedIn">
                 <i class="fab fa-2x text-white fa-linkedin"></i>
               </a>
             </li>
             <li class="list-inline-item mx-3">
-              <a
-                href="https://twitter.com/johan_lopes"
-                target="_blank"
-                title="Twitter"
-              >
+              <a href="https://twitter.com/johan_lopes" target="_blank" title="Twitter">
                 <i class="fab fa-2x text-white fa-twitter"></i>
               </a>
             </li>
@@ -50,8 +41,7 @@
           <p class="font-weight-light text-nowrap">Directement par tchat</p>
 
           <button class="btn btn-secondary text-white" @click="openChatbox">
-            <i class="fa fa-microphone-alt me-2"></i> Discuter maintenant avec
-            Johan
+            <i class="fa fa-microphone-alt me-2"></i> Discuter maintenant avec Johan
           </button>
         </div>
       </div>
@@ -61,20 +51,16 @@
 
 <script>
 export default {
-  name: "IndexContact",
+  name: 'IndexContact',
   data() {
     return {
-      showTiktokLol: false,
-    };
+      showTiktokLol: false
+    }
   },
   methods: {
     openChatbox() {
-      window.$crisp.push(["do", "chat:open"]);
-    },
-  },
-};
+      window.$crisp.push(['do', 'chat:open'])
+    }
+  }
+}
 </script>
-
-<style lang="scss" scoped>
-@import "../assets/scss/variables";
-</style>

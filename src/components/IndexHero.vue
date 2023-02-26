@@ -19,20 +19,16 @@
 
 <script>
 export default {
-  name: "IndexHero",
-};
+  name: 'IndexHero'
+}
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/scss/mixins";
-@import "../assets/scss/variables";
+@import '@/assets/scss/_mixins.scss';
+@import '@/assets/scss/_variables.scss';
 
 #hero {
-  background-image: image-set(
-    url("../assets/images/background.webp") 1x,
-    url("../assets/images/background.jpeg") 1x
-  );
-  height: 100%;
+  background-image: url('@/assets/images/background.jpeg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -40,7 +36,7 @@ export default {
   overflow: hidden;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -57,7 +53,7 @@ export default {
 
   h1 {
     text-shadow: 2px 2px 8px #222;
-    font-family: "Kalam", cursive;
+    font-family: 'Kalam', cursive;
   }
 
   .hero-mouse {

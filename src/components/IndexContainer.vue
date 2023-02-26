@@ -1,31 +1,31 @@
 <template>
   <div>
-    <index-hero />
-    <index-customers />
-    <index-services />
-    <index-projects />
-    <index-about />
-    <index-contact />
+    <IndexHero />
+    <IndexCustomers />
+    <IndexServices />
+    <IndexProjects />
+    <IndexAbout />
+    <IndexContact />
   </div>
 </template>
 
 <script>
-import IndexHero from "./IndexHero";
-import IndexCustomers from "./IndexCustomers";
-import IndexServices from "./IndexServices";
-import IndexProjects from "./IndexProjects";
-import IndexAbout from "./IndexAbout";
-import IndexContact from "./IndexContact";
+import IndexHero from './IndexHero.vue'
+import IndexCustomers from './IndexCustomers.vue'
+import IndexServices from './IndexServices.vue'
+import IndexProjects from './IndexProjects.vue'
+import IndexAbout from './IndexAbout.vue'
+import IndexContact from './IndexContact.vue'
 
 export default {
-  name: "IndexContainer",
+  name: 'IndexContainer',
   components: {
     IndexProjects,
     IndexServices,
     IndexCustomers,
     IndexHero,
     IndexAbout,
-    IndexContact,
-  },
-};
+    IndexContact
+  }
+}
 </script>

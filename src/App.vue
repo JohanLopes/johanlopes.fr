@@ -1,24 +1,16 @@
 <template>
-  <div>
-    <top-bar />
+  <main>
+    <TopBar />
     <router-view></router-view>
-    <bottom-bar />
-  </div>
+    <BottomBar />
+  </main>
 </template>
 
-<script>
-import TopBar from "./components/TopBar";
-import BottomBar from "./components/BottomBar";
-
-export default {
-  name: "App",
-  components: {
-    TopBar,
-    BottomBar,
-  },
-};
+<script setup>
+import TopBar from '@/components/TopBar.vue'
+import BottomBar from '@/components/BottomBar.vue'
 </script>
 
 <style lang="scss">
-@import "./assets/scss/app.scss";
+@import '@/assets/scss/app.scss';
 </style>

@@ -1,9 +1,9 @@
--
-  slug: wiismile
+- slug: wiismile
   title: WiiSmile
   pitch: Le comité d'entreprise externalisé pour TPE & PME
-  url: "https://monentreprise.wiismile.fr"
-  technologies: [Symfony 5, Doctrine, VueJs, Bootstrap, Elasticsearch, Api REST, Architecture hexagonale]
+  url: 'https://monentreprise.wiismile.fr'
+  technologies:
+    [Symfony 5, Doctrine, VueJs, Bootstrap, Elasticsearch, Api REST, Architecture hexagonale]
   description: |
     Créée en 2001 et forte de ses 130 collaborateurs à ce jour, la société WiiSmile a l'ambition de **permettre à
     toute TPE/PME de proposer à ses salariés des avantages équivalents à ceux d’un grand groupe.** 💪
@@ -21,11 +21,10 @@
     - un **backoffice** permettant aux collaborateurs WiiSmile (responsable relation client, conseillers B2C,
     comptabilité, ADV...) de consulter et gérer les données des adhérents.
 
--
-  slug: mon-petit-placement
+- slug: mon-petit-placement
   title: Mon Petit Placement
   pitch: La plateforme qui donne accès aux jeunes actifs à des produits d’investissement haut de gamme.
-  url: "https://monpetitplacement.fr"
+  url: 'https://monpetitplacement.fr'
   technologies: [Symfony 4, API Rest, Signature électronique, PhpUnit]
   description: |
     Mon Petit Placement est une plateforme visant à améliorer les habitudes des jeunes actifs (25 - 40 ans)
@@ -44,8 +43,7 @@
     unitaires** sur des parties critiques du projet : calculs de performance d'un placement financier, gestion de
     la facturation en fonction de la performance d'investissement...
 
--
-  slug: klapp
+- slug: klapp
   title: Klapp.io
   pitch: Klapp est une plateforme SaaS permettant aux entrepreneurs un accès à un catalogue de logiciels au sein d'un abonnement centralisé
   technologies: [Symfony 4, Doctrine, Vue.Js, Bootstrap, API Rest]
@@ -72,13 +70,12 @@
     **Un moteur de recherche**, basé sur **Elasticsearch**, a été dévelopé afin de permettre aux utilisateurs de rechercher des logiciels dans
     le catalogue de Klapp selon des critères bien précis.
 
--
-  slug: arianespace
+- slug: arianespace
   title: Arianespace
   pitch: Arianespace est une société française chargée de la commercialisation et de l’exploitation
     des systèmes de lancement spatiaux développés par ArianeGroup, à savoir les familles
     de lanceurs Ariane et Vega.
-  technologies: [ Symfony 2, Doctrine ]
+  technologies: [Symfony 2, Doctrine]
   url: https://www.arianespace.com
   description: |
     Le SI de Arianespace est composé de **multiples applications web ayant chacune un
@@ -94,12 +91,11 @@
     Pour des raisons de confidentialité, je ne peux donner plus de détails sur les
     développements réalisés chez Arianepace.
 
--
-  slug: adele
+- slug: adele
   title: Adele.org
   pitch: Adele.org est le spécialiste français du logement étudiant depuis 1997 !
-  technologies: [ Symfony 2, Doctrine, Méthodologie Scrum, Elasticsearch, Workflows ]
-  url: "https://www.adele.org"
+  technologies: [Symfony 2, Doctrine, Méthodologie Scrum, Elasticsearch, Workflows]
+  url: 'https://www.adele.org'
   description: |
     La plateforme permet aux étudiants de **rechercher un logement en résidence étudiante ou
     universitaire** dans la ville où ils réalisent leur études.
@@ -120,13 +116,11 @@
     De manière ponctuelle, j'ai aussi participé au **développement technique, sur le framework
     Symfony, de certaines parties de l'application**.
 
-
--
-  slug: afnic
+- slug: afnic
   title: Afnic
   pitch: Afnic - Association Française pour le Nommage Internet en Coopération
-  technologies: [ Symfony 1.4, Doctrine ]
-  url: "https://www.afnic.fr/"
+  technologies: [Symfony 1.4, Doctrine]
+  url: 'https://www.afnic.fr/'
   description: |
     L’Afnic est une association loi de 1901, qui a pour mission de **gérer les domaines Internet nationaux de premier niveau**
     de France, La Réunion, Terres australes et antarctiques françaises, Mayotte, Saint-Pierre-et-Miquelon et Wallis-et-Futuna.
@@ -145,8 +139,7 @@
     contextualisés** (gestion dynamique des fonctionnalités, charte graphique personnalisé)
     et la mise en place de l'architecture technique correspondante au sein du framework Symfony.
 
--
-  slug: servistreet
+- slug: servistreet
   title: Servistreet.com
   pitch: |
     ServiStreet.com est une plateforme collaborative d’échange de services entre voisins : jardinage, bricolage,
@@ -168,8 +161,7 @@
     Ce projet m'a aussi permis de découvrir les aspects extérieurs au développement applicatif : étude de marché,
     communication/marketing, recherche de financements...
 
--
-  slug: ritme
+- slug: ritme
   title: Ritme
   pitch: Société spécialisée dans la distribution de logiciels scientifiques
   technologies: [Symfony 1.4, Doctrine, jQuery, E-commerce, Paiement Atos, CMS]
@@ -185,8 +177,7 @@
     développeur, d'une designeuse/intégratrice, j'ai pu développer **les fiches produits des logiciels distribués** ainsi
     que tout le **workflow de gestion de commande** (panier, commande, paiement, suivi...).
 
--
-  slug: gdf-suez
+- slug: gdf-suez
   title: GDF Suez
   pitch: Développement de multiples plateformes dédiées à la clientèle professionnelle
   technologies: [Symfony 1.4, Symfony 2, Doctrine]

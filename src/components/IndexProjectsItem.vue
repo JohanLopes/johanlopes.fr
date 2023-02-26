@@ -1,16 +1,9 @@
 <template>
-  <router-link
-    :to="{ name: 'project', params: { slug: project.slug } }"
-    class="project"
-  >
+  <router-link :to="{ name: 'project', params: { slug: project.slug } }" class="project">
     <picture>
       <source :srcset="pictureUrl(project.slug, 'webp')" type="image/webp" />
       <source :srcset="pictureUrl(project.slug, 'png')" type="image/png" />
-      <img
-        :src="pictureUrl(project.slug, 'png')"
-        class="logo"
-        :alt="project.title"
-      />
+      <img :src="pictureUrl(project.slug, 'png')" class="logo" :alt="project.title" />
     </picture>
 
     <div class="content">
@@ -22,24 +15,23 @@
 
 <script>
 export default {
-  name: "IndexProjectsItem",
+  name: 'IndexProjectsItem',
   props: {
     project: {
       type: Object,
-      required: true,
-    },
+      required: true
+    }
   },
   methods: {
-    pictureUrl: (slug, format) =>
-      require("../assets/datas/projects/pictures-sm/" + slug + "." + format),
-  },
-};
+    pictureUrl: (slug, format) => new URL(`../assets/datas/projects/pictures-sm/${slug}.${format}`, import.meta.url).href
+  }
+}
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/scss/variables";
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/functions";
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/variables";
+@import '@/assets/scss/_variables.scss';
+@import '@fortawesome/fontawesome-free/scss/_functions.scss';
+@import '@fortawesome/fontawesome-free/scss/_variables.scss';
 
 .project {
   position: relative;
@@ -58,7 +50,7 @@ export default {
 
   &:before {
     position: absolute;
-    content: "";
+    content: '';
     top: 0;
     bottom: 0;
     left: 0;

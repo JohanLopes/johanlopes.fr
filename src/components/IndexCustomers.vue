@@ -7,27 +7,24 @@
         <img :src="logoUrl(slug, 'png')" :alt="name" class="px-3" />
       </picture>
     </div>
-    <div class="customers-explanation d-none d-lg-block">
-      Ils m'ont confié leurs projets web 😊
-    </div>
+    <div class="customers-explanation d-none d-lg-block">Ils m'ont confié leurs projets web 😊</div>
   </section>
 </template>
 
 <script>
-import customersCollection from "../assets/datas/customers.yml";
+import customersCollection from '@/assets/datas/customers.yml'
 
 export default {
-  name: "IndexCustomers",
+  name: 'IndexCustomers',
   data: function () {
     return {
-      customers: customersCollection,
-    };
+      customers: customersCollection
+    }
   },
   methods: {
-    logoUrl: (slug, format) =>
-      require("../assets/datas/customers/" + slug + "." + format),
-  },
-};
+    logoUrl: (slug, format) => new URL(`../assets/datas/customers/${slug}.${format}`, import.meta.url).href
+  }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -47,17 +44,17 @@ export default {
     position: absolute;
     bottom: -50px;
     left: 60%;
-    font-family: "Kalam", cursive;
+    font-family: 'Kalam', cursive;
     font-size: 133%;
     color: #888;
     transition: opacity 4s ease-out;
     display: block;
 
     &::before {
-      content: "";
+      content: '';
       height: 50px;
       width: 50px;
-      background: url("../assets/images/arrows-right-down.png") no-repeat 0 top;
+      background: url('@/assets/images/arrows-right-down.png') no-repeat 0 top;
       background-size: contain;
       display: inline-block;
       margin-left: -50px;

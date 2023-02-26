@@ -41,11 +41,7 @@
           <picture>
             <source :srcset="logoUrl(project.slug, 'webp')" type="image/webp" />
             <source :srcset="logoUrl(project.slug, 'png')" type="image/png" />
-            <img
-              :src="logoUrl(project.slug, 'png')"
-              class="logo"
-              :alt="project.title"
-            />
+            <img :src="logoUrl(project.slug, 'png')" class="logo" :alt="project.title" />
           </picture>
         </div>
         <div class="flex-grow-1 ms-4">
@@ -53,23 +49,14 @@
           <p v-if="project.pitch" class="text-black mt-1 mb-0">
             {{ project.pitch }}
           </p>
-          <a
-            v-if="project.url"
-            :href="project.url"
-            target="_blank"
-            class="mt-1"
-          >
+          <a v-if="project.url" :href="project.url" target="_blank" class="mt-1">
             <i class="fa fa-link me-1"></i> {{ project.url }}
           </a>
         </div>
       </section>
 
       <!-- eslint-disable vue/no-v-html -->
-      <section
-        v-if="project.description"
-        class="mt-4"
-        v-html="renderDescription"
-      ></section>
+      <section v-if="project.description" class="mt-4" v-html="renderDescription"></section>
 
       <section
         v-if="project.contribution"
@@ -92,62 +79,57 @@
 </template>
 
 <script>
-import projectsCollection from "../assets/datas/projects.yaml";
-import { marked } from "marked";
+import projectsCollection from '@/assets/datas/projects.yaml'
+import { marked } from 'marked'
 
 export default {
-  name: "AsideProjectDetails",
+  name: 'AsideProjectDetails',
 
   data() {
     return {
       currentIndex: null,
-      project: null,
-    };
+      project: null
+    }
   },
 
   computed: {
     slug() {
-      return this.$route.params.slug;
+      return this.$route.params.slug
     },
 
     renderDescription() {
-      return marked.parse(this.project.description);
+      return marked.parse(this.project.description)
     },
 
     renderContribution() {
-      return marked.parse(this.project.contribution);
+      return marked.parse(this.project.contribution)
     },
 
     previousProjectSlug() {
-      let previousIndex = this.currentIndex - 1;
+      let previousIndex = this.currentIndex - 1
 
-      return previousIndex >= 0 ? projectsCollection[previousIndex].slug : null;
+      return previousIndex >= 0 ? projectsCollection[previousIndex].slug : null
     },
 
     nextProjectSlug() {
-      let nextIndex = this.currentIndex + 1;
+      let nextIndex = this.currentIndex + 1
 
-      return nextIndex < projectsCollection.length
-        ? projectsCollection[nextIndex].slug
-        : null;
-    },
+      return nextIndex < projectsCollection.length ? projectsCollection[nextIndex].slug : null
+    }
   },
 
   created() {
-    this.fetchData();
+    this.fetchData()
   },
 
   methods: {
     fetchData() {
-      this.currentIndex = projectsCollection.findIndex(
-        (element) => element.slug === this.slug
-      );
-      this.project = projectsCollection[this.currentIndex];
+      this.currentIndex = projectsCollection.findIndex((element) => element.slug === this.slug)
+      this.project = projectsCollection[this.currentIndex]
     },
-    logoUrl: (slug, format) =>
-      require("../assets/datas/projects/logos/" + slug + "." + format),
-  },
-};
+    logoUrl: (slug, format) => new URL(`../assets/datas/projects/logos/${slug}.${format}`, import.meta.url).href
+  }
+}
 </script>
 
 <style lang="scss" scoped>
