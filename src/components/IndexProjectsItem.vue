@@ -23,7 +23,8 @@ export default {
     }
   },
   methods: {
-    pictureUrl: (slug, format) => new URL(`../assets/datas/projects/pictures-sm/${slug}.${format}`, import.meta.url).href
+    pictureUrl: (slug, format) =>
+      new URL(`../assets/datas/projects/pictures-sm/${slug}.${format}`, import.meta.url).href
   }
 }
 </script>

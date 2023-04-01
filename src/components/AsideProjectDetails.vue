@@ -127,7 +127,8 @@ export default {
       this.currentIndex = projectsCollection.findIndex((element) => element.slug === this.slug)
       this.project = projectsCollection[this.currentIndex]
     },
-    logoUrl: (slug, format) => new URL(`../assets/datas/projects/logos/${slug}.${format}`, import.meta.url).href
+    logoUrl: (slug, format) =>
+      new URL(`../assets/datas/projects/logos/${slug}.${format}`, import.meta.url).href
   }
 }
 </script>
