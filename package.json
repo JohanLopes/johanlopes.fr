@@ -14,7 +14,7 @@
     "@modyfi/vite-plugin-yaml": "^1.0.4",
     "bootstrap": "^5.2.3",
     "js-yaml-loader": "^1.2.2",
-    "marked": "^4.2.12",
+    "marked": "^5.1.0",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
   },
