@@ -33,11 +33,11 @@ export default {
   position: relative;
 
   img {
-    filter: grayscale(1);
+    filter: saturate(0) contrast(0) brightness(1);
     transition: all 0.3s ease-out;
 
     &:hover {
-      filter: grayscale(0);
+      filter: initial;
     }
   }
 

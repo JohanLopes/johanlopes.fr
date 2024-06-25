@@ -1,3 +1,35 @@
+- slug: carrefour
+  title: Carrefour.fr
+  pitch: Digital factory Carrefour.fr
+  url: 'https://www.carrefour.fr'
+  technologies: [Symfony 5, VueJs, SSR, Api REST, DDD, Feature flags, Trunk Based Development]
+  description: |
+    Carrefour.fr permet aux consommateurs de faire leurs courses en ligne dans les domaines de l'alimentation,
+    des équipements maison & loisirs et de services divers. Le client a ensuite la possibilité de réceptionner 
+    ses achats en retrait Drive ou en Livraison à Domicile. Dans son espace client, l'utilisateur a aussi la 
+    possibilité de gérer son programme fidélité ainsi que ses commandes.
+  contribution: |
+    Accompagnement technique et organisationnel de 2 à 5 développeurs Symfony et Vue.js au sein de l'équipe 
+    Simple Care dont le périmètre fonctionnel concerne les processus post achat : visualisation des commandes 
+    passées sur le site web (Livraison, Drive, Retrait 2h...), visualisation des achats magasins, actions sur 
+    les commandes (décalage de retrait/livraison, annulation, demande de SAV...), outils de communication avec 
+    le service client...
+
+- slug: chanel
+  title: Chanel
+  pitch: Digital Passport Chanel & Moi
+  url: 'https://www.chanel.com/fr/mode/services/chanel-et-moi/'
+  technologies: [Symfony 5, VueJs, Doctrine, Mysql, API REST, Kafka, Azure Devops, Kubernetes]
+  description: |
+    Lors de l'achat d'articles de maroquinerie ou de prêt à porter par un client en boutique CHANEL, ce dernier
+    a ensuite la possibilité de créer des passports digitaux permettant de suivre la garantie de ses articles et 
+    d'accéder à des services personnalisés (conseils d'entretien dédiés, SAV pour réparation...)
+  contribution: |
+    Au sein de la division Fashion, j'ai participé au développement technique du service Chanel & Moi - 
+    Digital Passport. Mise en place d’APIs sous Symfony et conception d’interfaces utilisateurs sous Vue.js.
+    Consommation automatique d'une "Message queue" via le protocole Kafka afin d'automatiser la création des Passport liés
+    aux achats clients en boutique.
+
 - slug: wiismile
   title: WiiSmile
   pitch: Le comité d'entreprise externalisé pour TPE & PME
@@ -10,7 +42,7 @@
 
     Pour cela, WiiSmile met à disposition plusieurs outils de récompense, motivation et fidélisation des salariés :
     versement de chèques cadeaux, versement de subventions, catalogue de produits et services à tarifs négociés,
-    titres restaurant... **L'ensemble de ces servives sont pilotables en ligne !**
+    titres restaurant... **L'ensemble de ces services sont pilotables en ligne !**
   contribution: |
     Depuis quelques années, WiiSmile a décidé d'améliorer la digitalisation de ses offres en permettant à ses clients
     de consulter & gérer l'ensemble de leurs services en ligne. C'est dans ce contexte que j'interviens depuis 2018
@@ -116,29 +148,6 @@
     De manière ponctuelle, j'ai aussi participé au **développement technique, sur le framework
     Symfony, de certaines parties de l'application**.
 
-- slug: afnic
-  title: Afnic
-  pitch: Afnic - Association Française pour le Nommage Internet en Coopération
-  technologies: [Symfony 1.4, Doctrine]
-  url: 'https://www.afnic.fr/'
-  description: |
-    L’Afnic est une association loi de 1901, qui a pour mission de **gérer les domaines Internet nationaux de premier niveau**
-    de France, La Réunion, Terres australes et antarctiques françaises, Mayotte, Saint-Pierre-et-Miquelon et Wallis-et-Futuna.
-
-    L'Afnic se définit également comme fournisseur de solutions techniques et de services de registre,
-    elle est notamment **le partenaire technique de nouveaux domaines génériques** dont le .paris, le .bzh, le .alsace, le .ovh.
-
-    En 2013, l'Afnic a souhaité refondre son site institutionnel et développer un nouvel extranet
-    a destination de ses partenaires professionnels (Bureaux d'enregistrements).
-  contribution: |
-    En étroite collaboration avec les équipes du clients (chef de projet, responsable des opérations...)
-    j'ai été en charge de l'**élaboration des solutions techniques** proposées au client
-    ainsi que du **pilotage des équipes de développement** (développeurs, intégrateur...)
-
-    L'un des plus gros challenge de ce projet a été la **gestion d'environnements
-    contextualisés** (gestion dynamique des fonctionnalités, charte graphique personnalisé)
-    et la mise en place de l'architecture technique correspondante au sein du framework Symfony.
-
 - slug: servistreet
   title: Servistreet.com
   pitch: |
@@ -160,22 +169,6 @@
     porteurs de projet dans la maturation de leurs idées et leur mise en oeuvre.
     Ce projet m'a aussi permis de découvrir les aspects extérieurs au développement applicatif : étude de marché,
     communication/marketing, recherche de financements...
-
-- slug: ritme
-  title: Ritme
-  pitch: Société spécialisée dans la distribution de logiciels scientifiques
-  technologies: [Symfony 1.4, Doctrine, jQuery, E-commerce, Paiement Atos, CMS]
-  description: |
-    Ritme distribue de nombreux logiciels dans les domaines scientifiques. Afin d'accélérer son développement,
-    l'entreprise a décidé de confier à un prestataire de développement web **la réalisation d'une nouvelle
-    plateforme permettant d'exposer ses produits, promouvoir ses services de formations et de support**.
-  contribution: |
-    En tant que lead développeur sur ce projet, j'ai accompagné le client dès le départ dans la **structuration globale
-    de son projet web** et des différentes parties applicatives qu'il souhaitait mettre en place.
-
-    Accompagné d'un autre
-    développeur, d'une designeuse/intégratrice, j'ai pu développer **les fiches produits des logiciels distribués** ainsi
-    que tout le **workflow de gestion de commande** (panier, commande, paiement, suivi...).
 
 - slug: gdf-suez
   title: GDF Suez
@@ -201,9 +194,3 @@
       - Développement d'un CMS personnalisé avec gestion des publications versionnées
       - Mise en place d'un moteur de recherche sémantique
       - etc.
-
-#Vaincre la mucoviscidose - CF Experts
-#Tombola Directe
-#Profideo - La tribune de l'Assurance
-#Ritme
-#Time Sport International
