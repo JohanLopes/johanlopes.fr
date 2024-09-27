@@ -1,5 +1,4 @@
 @use 'sass:math';
-@import 'bootstrap/scss/functions';
 
 $font-family-base: 'Lato', sans-serif;
 $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
@@ -53,6 +52,3 @@ $navbar-nav-link-padding-x: 1rem;
 
 // Carousel
 $carousel-indicator-height: 5px;
-
-@import 'bootstrap/scss/variables';
-@import 'bootstrap/scss/variables-dark';

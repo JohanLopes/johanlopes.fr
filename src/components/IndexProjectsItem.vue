@@ -23,17 +23,12 @@ export default {
     }
   },
   methods: {
-    pictureUrl: (slug, format) =>
-      new URL(`../assets/datas/projects/pictures-sm/${slug}.${format}`, import.meta.url).href
+    pictureUrl: (slug, format) => new URL(`../assets/datas/projects/pictures-sm/${slug}.${format}`, import.meta.url).href
   }
 }
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/_variables.scss';
-@import '@fortawesome/fontawesome-free/scss/_functions.scss';
-@import '@fortawesome/fontawesome-free/scss/_variables.scss';
-
 .project {
   position: relative;
   display: inline-block;

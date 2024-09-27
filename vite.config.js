@@ -16,5 +16,25 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        quietDeps: true,
+        silenceDeprecations: ['legacy-js-api'],
+        additionalData: `
+          @import 'bootstrap/scss/functions';
+          @import '@/assets/scss/_variables.scss';
+          @import '@/assets/scss/_mixins.scss';
+          @import 'bootstrap/scss/variables';
+          @import "bootstrap/scss/variables-dark";
+          @import 'bootstrap/scss/maps';
+          @import 'bootstrap/scss/mixins';
+          @import 'bootstrap/scss/utilities';
+        `
+      }
+    }
   }
 })
+
+

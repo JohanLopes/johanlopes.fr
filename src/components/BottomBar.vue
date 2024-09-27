@@ -5,14 +5,10 @@
         <p class="mb-0 me-2">© {{ new Date().getFullYear() }}</p>
         <p class="mb-0 ps-2 border-start">
           Johan LOPES
-          <span class="mx-1 fw-light d-none d-md-inline"
-            >Concepteur de solutions web Freelance</span
-          >
+          <span class="mx-1 fw-light d-none d-md-inline">Concepteur de solutions web Freelance</span>
         </p>
 
-        <router-link :to="{ name: 'legal-notices' }" class="text-decoration-none ms-auto">
-          Mentions légales
-        </router-link>
+        <router-link :to="{ name: 'legal-notices' }" class="text-decoration-none ms-auto"> Mentions légales </router-link>
       </div>
     </div>
   </footer>
@@ -25,8 +21,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/_variables.scss';
-
 #footer {
   font-size: 14px;
 

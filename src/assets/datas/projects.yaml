@@ -34,8 +34,7 @@
   title: WiiSmile
   pitch: Le comité d'entreprise externalisé pour TPE & PME
   url: 'https://monentreprise.wiismile.fr'
-  technologies:
-    [Symfony 5, Doctrine, VueJs, Bootstrap, Elasticsearch, Api REST, Architecture hexagonale]
+  technologies: [Symfony 5, Doctrine, VueJs, Bootstrap, Elasticsearch, Api REST, Architecture hexagonale]
   description: |
     Créée en 2001 et forte de ses 130 collaborateurs à ce jour, la société WiiSmile a l'ambition de **permettre à
     toute TPE/PME de proposer à ses salariés des avantages équivalents à ceux d’un grand groupe.** 💪

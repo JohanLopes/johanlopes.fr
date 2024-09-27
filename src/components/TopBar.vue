@@ -2,10 +2,7 @@
   <nav id="topbar" class="navbar navbar-expand-md" :class="classObject">
     <div class="container">
       <router-link :to="{ name: 'index', hash: '#hero' }" class="navbar-brand">
-        <img
-          src="@/assets/images/logo.svg"
-          alt="Johan Lopes | Concepteur de solutions web Freelance"
-        />
+        <img src="@/assets/images/logo.svg" alt="Johan Lopes | Concepteur de solutions web Freelance" />
       </router-link>
 
       <button class="navbar-toggler" type="button" title="Menu" @click="toggleMenu">
@@ -15,24 +12,16 @@
       <div class="navbar-collapse collapse" :class="{ show: showMenuCollapsed }">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <router-link :to="{ name: 'index', hash: '#services' }" class="nav-link"
-              >Mes domaines d'expertise
-            </router-link>
+            <router-link :to="{ name: 'index', hash: '#services' }" class="nav-link">Mes domaines d'expertise </router-link>
           </li>
           <li class="nav-item">
-            <router-link :to="{ name: 'index', hash: '#projects' }" class="nav-link"
-              >Réalisations
-            </router-link>
+            <router-link :to="{ name: 'index', hash: '#projects' }" class="nav-link">Réalisations </router-link>
           </li>
           <li class="nav-item">
-            <router-link :to="{ name: 'index', hash: '#about' }" class="nav-link"
-              >Qui suis-je ?
-            </router-link>
+            <router-link :to="{ name: 'index', hash: '#about' }" class="nav-link">Qui suis-je ? </router-link>
           </li>
           <li class="nav-item">
-            <router-link :to="{ name: 'index', hash: '#contact' }" class="nav-link"
-              >On discute de votre projet ?
-            </router-link>
+            <router-link :to="{ name: 'index', hash: '#contact' }" class="nav-link">On discute de votre projet ? </router-link>
           </li>
         </ul>
       </div>
@@ -83,9 +72,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/_variables.scss';
-@import 'bootstrap/scss/mixins/_breakpoints.scss';
-
 #topbar {
   left: 0;
   right: 0;

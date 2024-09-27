@@ -22,8 +22,7 @@ export default {
     }
   },
   methods: {
-    logoUrl: (slug, format) =>
-      new URL(`../assets/datas/customers/${slug}.${format}`, import.meta.url).href
+    logoUrl: (slug, format) => new URL(`../assets/datas/customers/${slug}.${format}`, import.meta.url).href
   }
 }
 </script>

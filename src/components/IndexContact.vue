@@ -6,8 +6,8 @@
           <h4 class="h3 text-white">Vous avez un projet ?</h4>
 
           <p class="text-justify mb-0">
-            Je vous propose d'en discuter quelques instants afin de mieux comprendre votre métier,
-            vos objectifs, vos contraintes et ainsi mieux cerner les contours de votre projet.
+            Je vous propose d'en discuter quelques instants afin de mieux comprendre votre métier, vos objectifs, vos contraintes et ainsi mieux
+            cerner les contours de votre projet.
           </p>
         </div>
         <div class="col-12 col-lg-3 mt-4 mt-lg-0 text-center">
@@ -25,12 +25,7 @@
               </a>
             </li>
             <li class="list-inline-item mx-3">
-              <a
-                href="#"
-                title="TikTok"
-                class="text-decoration-none"
-                @click.prevent="showTiktokLol = true"
-              >
+              <a href="#" title="TikTok" class="text-decoration-none" @click.prevent="showTiktokLol = true">
                 <span v-if="showTiktokLol" class="fs-3">😂</span>
                 <i v-else class="fab fa-2x text-white fa-tiktok"></i>
               </a>

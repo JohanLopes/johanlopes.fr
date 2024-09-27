@@ -24,9 +24,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/_mixins.scss';
-@import '@/assets/scss/_variables.scss';
-
 #hero {
   background-image: url('@/assets/images/background.jpeg');
   background-position: center;
