@@ -21,7 +21,7 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         quietDeps: true,
-        silenceDeprecations: ['legacy-js-api'],
+        silenceDeprecations: ['legacy-js-api', 'import'],
         additionalData: `
           @import 'bootstrap/scss/functions';
           @import '@/assets/scss/_variables.scss';
