@@ -60,7 +60,9 @@ const logoUrl = computed(
   () => new URL(`../../assets/datas/career/${props.experience.slug}.png`, import.meta.url).href,
 )
 const formattedStartDate = computed(() => dateFormatter.format(props.experience.startDate))
-const formattedEndDate = computed(() => dateFormatter.format(props.experience.endDate))
+const formattedEndDate = computed(() =>
+  props.experience.endDate ? dateFormatter.format(props.experience.endDate) : "Aujourd'hui",
+)
 const formattedContext = computed(() => marked.parse(props.experience.context))
 const formattedDescription = computed(() => marked.parse(props.experience.description))
 
