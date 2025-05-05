@@ -1,39 +1,33 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import IndexContainer from '@/components/IndexContainer.vue'
-import AsideProjectDetails from '@/components/AsideProjectDetails.vue'
-import AsideLegalNotices from '@/components/AsideLegalNotices.vue'
+import HomePage from '@/components/HomePage.vue'
+import LegalNotices from '@/components/LegalNotices.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'index',
-      component: IndexContainer,
+      name: 'homepage',
+      component: HomePage,
       children: [
-        {
-          path: '/project/:slug',
-          name: 'project',
-          component: AsideProjectDetails
-        },
         {
           path: '/legal-notices',
           name: 'legal-notices',
-          component: AsideLegalNotices
-        }
-      ]
-    }
+          component: LegalNotices,
+        },
+      ],
+    },
   ],
   scrollBehavior(to) {
     if (to.hash) {
       return {
         el: to.hash,
-        behavior: 'smooth'
+        behavior: 'smooth',
       }
     }
 
     return false
-  }
+  },
 })
 
 export default router

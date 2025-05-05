@@ -1,8 +1,11 @@
 <template>
   <nav id="topbar" class="navbar navbar-expand-md" :class="classObject">
     <div class="container">
-      <router-link :to="{ name: 'index', hash: '#hero' }" class="navbar-brand">
-        <img src="@/assets/images/logo.svg" alt="Johan Lopes | Concepteur de solutions web Freelance" />
+      <router-link :to="{ name: 'homepage', hash: '#hero' }" class="navbar-brand">
+        <img
+          src="@/assets/images/logo.svg"
+          alt="Johan Lopes | Concepteur de solutions web Freelance"
+        />
       </router-link>
 
       <button class="navbar-toggler" type="button" title="Menu" @click="toggleMenu">
@@ -12,16 +15,19 @@
       <div class="navbar-collapse collapse" :class="{ show: showMenuCollapsed }">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <router-link :to="{ name: 'index', hash: '#services' }" class="nav-link">Mes domaines d'expertise </router-link>
+            <router-link :to="{ name: 'homepage', hash: '#about' }" class="nav-link"
+              >Qui suis-je ?
+            </router-link>
           </li>
           <li class="nav-item">
-            <router-link :to="{ name: 'index', hash: '#projects' }" class="nav-link">Réalisations </router-link>
+            <router-link :to="{ name: 'homepage', hash: '#career' }" class="nav-link"
+              >Mon parcours professionnel
+            </router-link>
           </li>
           <li class="nav-item">
-            <router-link :to="{ name: 'index', hash: '#about' }" class="nav-link">Qui suis-je ? </router-link>
-          </li>
-          <li class="nav-item">
-            <router-link :to="{ name: 'index', hash: '#contact' }" class="nav-link">On discute de votre projet ? </router-link>
+            <router-link :to="{ name: 'homepage', hash: '#contact' }" class="nav-link"
+              >On discute de votre projet ?
+            </router-link>
           </li>
         </ul>
       </div>
@@ -29,45 +35,39 @@
   </nav>
 </template>
 
-<script>
-export default {
-  name: 'TopBar',
-  data() {
-    return {
-      fixed: false,
-      topbarHeight: 60,
-      showMenuCollapsed: false
-    }
-  },
-  computed: {
-    classObject: function () {
-      return {
-        'fixed-top': this.fixed,
-        'navbar-light': this.fixed,
-        'navbar-dark': !this.fixed
-      }
-    }
-  },
-  mounted() {
-    this.affixTopbar()
-  },
-  beforeMount() {
-    window.addEventListener('scroll', this.affixTopbar)
-  },
-  beforeUnmount() {
-    window.removeEventListener('scroll', this.affixTopbar)
-  },
-  methods: {
-    affixTopbar() {
-      let scrollHeight = window.scrollY
-      let viewportHeight = window.innerHeight
+<script setup>
+import { computed, onMounted, onBeforeMount, onBeforeUnmount, ref } from 'vue'
 
-      this.fixed = scrollHeight > viewportHeight
-    },
-    toggleMenu() {
-      this.showMenuCollapsed = !this.showMenuCollapsed
-    }
-  }
+const fixed = ref(false)
+const showMenuCollapsed = ref(false)
+
+const classObject = computed(() => ({
+  'fixed-top': fixed.value,
+  'navbar-light': fixed.value,
+  'navbar-dark': !fixed.value,
+}))
+
+onMounted(() => {
+  affixTopbar()
+})
+
+onBeforeMount(() => {
+  window.addEventListener('scroll', affixTopbar)
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', affixTopbar)
+})
+
+const affixTopbar = () => {
+  let scrollHeight = window.scrollY
+  let viewportHeight = window.innerHeight
+
+  fixed.value = scrollHeight > viewportHeight
+}
+
+const toggleMenu = () => {
+  showMenuCollapsed.value = !showMenuCollapsed.value
 }
 </script>
 

@@ -1,0 +1,98 @@
+- slug: elao
+  position: Développeur Web puis Chef de projets
+  company: Elao - Lyon
+  startDate: 2009-10-01
+  endDate: 2015-12-31
+  tags: [CDI, En agence]
+  technologies: [Symfony 1.4, Symfony 2, Doctrine, ElasticSearch, jQuery, Bootstrap]
+  description: |
+    - Développement de sites web sous Symfony pour des clients tels que Seb, Kozoom, France Bénévolat, Atelier magique, Babolat, Wanimo, 
+    GDF, Arianespace, Nosbonsplatschezvous.com... Lead developer sur de nombreux projets !
+    - Réunions internes avec l’équipe de développement (Scrum Daily meeting)
+    - Relation client (Arianespace, GDF, Afnic, Adele.org, M6 Web...)
+    - Chiﬀrages, planifications, Spécifications fonctionnelles/techniques, Tests / Recettage
+    - Participation active à la gestion commerciale et administrative : bons de commande, facturation, relances règlements, contrats...
+
+- slug: klapp
+  position: Fondateur de Klapp.io
+  company: Klapp SAS - Lyon
+  startDate: 2016-01-01
+  endDate: 2017-12-31
+  tags: [Entrepreneuriat, En incubateur de startup]
+  technologies: [Symfony 4, Doctrine, Vue.Js, Bootstrap, API Rest]
+  context: |
+    Le projet Klapp.io est né du constat qu' il était difficile pour les entrepreneurs et indépendants de s’équiper convenablement
+    de logiciels professionnels, par manque de budget ou méconnaissance des outils correspondant à leur activité.
+
+    C'est en 2017 que la première version de Klapp.io voit le jour avec l'objectif de **proposer aux entrepreneurs d'accéder
+    à un catalogue d'applications SaaS à prix réduit, et cela au sein d'un abonnement mensuel centralisé.** Klapp est le Netflix du
+    logiciel. 😉
+
+    Le projet Klapp.io intrigue pas mal d'entrepreneurs par son modèle innovant de distribution et très vite une communauté d'utilisateurs
+    se créée autour du projet. Séduit par le concept, la Banque Publique d'Investissement française investit dans le projet
+    afin de l'accompagner dans son développement.
+  description: |
+    - Etude de marché / Conception fonctionnelle du MVP
+    - Architecture technique
+    - Développement API REST & Backend sous Symfony / PostgreSQL
+    - Développement Frontend sous Vue.js
+    - Growth hacking : optimisation/automatisation de l’acquisition clients
+    - Gestion d’entreprise : administratif, recrutements, financements...
+
+- slug: wiismile
+  position: Lead developer Symfony & Vue.js
+  company: WiiSmile - Montmélian
+  startDate: 2018-01-01
+  endDate: 2022-12-31
+  tags: [Mission Freelance, 70% remote]
+  technologies:
+    [Symfony 5, Doctrine, VueJs, Bootstrap, Elasticsearch, Api REST, Architecture hexagonale]
+  context: |
+    Créée en 2001 et forte de ses 130 collaborateurs à ce jour, la société WiiSmile a l'ambition de **permettre à
+    toute TPE/PME de proposer à ses salariés des avantages équivalents à ceux d’un grand groupe.** 💪
+
+    Pour cela, WiiSmile met à disposition plusieurs outils de récompense, motivation et fidélisation des salariés :
+    versement de chèques cadeaux, versement de subventions, catalogue de produits et services à tarifs négociés,
+    titres restaurant... **L'ensemble de ces services sont pilotables en ligne !**
+  description: |
+    - Développement de 2 applications sous Symfony et VueJS :
+      - un espace en ligne dédié aux clients de la société
+      - un backoﬃce : gestion clients, suivi de commande, gestion comptable...
+    - Pilotage des développements de l'équipe Symfony, Conception technico- fonctionnelle, mise en place d'une architecture hexagonale/DDD, 
+    Code review, Gestion des pipeline d'intégration continue (Gitlab CI/CD)
+
+- slug: carrefour
+  position: Tech Lead Symfony & Vue.js
+  company: Digital Factory Carrefour.fr
+  startDate: 2023-01-01
+  endDate: 2023-11-31
+  tags: [Mission Freelance, 100% remote]
+  technologies: [Symfony 5, VueJs, SSR, Api REST, DDD, Feature flags, Trunk Based Development]
+  context: |
+    Carrefour.fr permet aux consommateurs de faire leurs courses en ligne dans les domaines de l'alimentation,
+    des équipements maison & loisirs et de services divers. Le client a ensuite la possibilité de réceptionner 
+    ses achats en retrait Drive ou en Livraison à Domicile. Dans son espace client, l'utilisateur a aussi la 
+    possibilité de gérer son programme fidélité ainsi que ses commandes.
+  description: |
+    Accompagnement technique et organisationnel de 2 à 5 développeurs Symfony et Vue.js au sein de l'équipe Simple Care dont le périmètre 
+    fonctionnel concerne les processus post achat : visualisation des commandes passées sur le site web (Livraison, Drive, Retrait 2h...), 
+    visualisation des achats magasins, actions sur les commandes (décalage de retrait/livraison, annulation, demande de SAV...), outils de 
+    communication avec le service client....
+
+- slug: chanel
+  position: Développeur senior PHP Symfony & Vue.js
+  company: Chanel
+  startDate: 2023-12-01
+  endDate:
+  tags: [Mission Freelance, 100% remote]
+  technologies: [Symfony 5, VueJs, Doctrine, Mysql, API REST, Kafka, Azure Devops, Kubernetes]
+  context: |
+    Lors de l'achat d'articles de maroquinerie ou de prêt à porter par un client en boutique CHANEL, ce dernier
+    a ensuite la possibilité de créer des passports digitaux permettant de suivre la garantie de ses articles et 
+    d'accéder à des services personnalisés (conseils d'entretien dédiés, SAV pour réparation...)
+  description: |
+    Développement d’une API REST et de 2 applications front-oﬃce/back-oﬃce permettant la génération et la gestion de Passport Digitaux liés 
+    aux articles vendus dans les boutiques Chanel.
+
+    Développement sous Symfony (API Platform) et Vue.js, conception technique, code review, mise en place du traitement de message Kafka pour 
+    l’automatisation de certains traitements, Déploiement avec des équipes internationales sur stack Kubernetes…
