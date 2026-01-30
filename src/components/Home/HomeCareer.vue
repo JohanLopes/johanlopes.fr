@@ -8,7 +8,7 @@
           v-for="experience in experiences"
           :key="experience.slug"
           :experience="experience"
-        ></career-item>
+        />
       </ul>
     </div>
   </section>

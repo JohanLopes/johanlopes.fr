@@ -13,7 +13,9 @@
         </h3>
       </div>
     </div>
-    <div class="hero-mouse"><span></span></div>
+    <div class="hero-mouse">
+      <span />
+    </div>
   </section>
 </template>
 

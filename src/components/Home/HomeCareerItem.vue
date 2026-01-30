@@ -4,8 +4,10 @@
 
     <div class="row">
       <div class="col-12 col-md-8">
-        <h3 class="text-primary mb-1">{{ experience.position }}</h3>
-        <h6 class="text-muted"><i class="fa fa-building me-2"></i> {{ experience.company }}</h6>
+        <h3 class="text-primary mb-1">
+          {{ experience.position }}
+        </h3>
+        <h6 class="text-muted"><i class="fa fa-building me-2" /> {{ experience.company }}</h6>
       </div>
       <div class="col text-md-end">
         <p class="mb-1">
@@ -22,10 +24,10 @@
     </div>
 
     <!-- eslint-disable vue/no-v-html -->
-    <div v-if="experience.context" v-html="formattedContext" class="text-gray-500 fst-italic"></div>
+    <div v-if="experience.context" class="text-gray-500 fst-italic" v-html="formattedContext" />
 
     <!-- eslint-disable vue/no-v-html -->
-    <div v-if="experience.description" v-html="formattedDescription" class="text-black"></div>
+    <div v-if="experience.description" class="text-black" v-html="formattedDescription" />
 
     <ul
       v-if="experience.technologies && experience.technologies.length > 0"

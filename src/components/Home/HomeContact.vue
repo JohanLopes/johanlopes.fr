@@ -17,7 +17,7 @@
             target="_blank"
           >
             <span class="d-flex align-items-center border-white border">
-              <i class="fa fa-brands fa-linkedin-in bg-white text-primary p-1"></i>
+              <i class="fa fa-brands fa-linkedin-in bg-white text-primary p-1" />
               <small class="text-white px-2"
                 >Prendre contact avec moi sur <strong>LinkedIn</strong></small
               >

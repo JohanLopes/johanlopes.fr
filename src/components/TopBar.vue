@@ -9,24 +9,24 @@
       </router-link>
 
       <button class="navbar-toggler" type="button" title="Menu" @click="toggleMenu">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon" />
       </button>
 
       <div class="navbar-collapse collapse" :class="{ show: showMenuCollapsed }">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <router-link :to="{ name: 'homepage', hash: '#about' }" class="nav-link"
-              >Qui suis-je ?
+            <router-link :to="{ name: 'homepage', hash: '#about' }" class="nav-link">
+              Qui suis-je ?
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link :to="{ name: 'homepage', hash: '#career' }" class="nav-link"
-              >Mon parcours professionnel
+            <router-link :to="{ name: 'homepage', hash: '#career' }" class="nav-link">
+              Mon parcours professionnel
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link :to="{ name: 'homepage', hash: '#contact' }" class="nav-link"
-              >On discute de votre projet ?
+            <router-link :to="{ name: 'homepage', hash: '#contact' }" class="nav-link">
+              On discute de votre projet ?
             </router-link>
           </li>
         </ul>
