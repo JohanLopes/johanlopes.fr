@@ -1,7 +1,6 @@
 @use 'sass:math';
 
 $font-family-base: 'Lato', sans-serif;
-$fa-font-path: '@fortawesome/fontawesome-free/webfonts';
 $enable-smooth-scroll: true;
 
 // Colors
@@ -49,6 +48,3 @@ $h6-font-size: 1rem;
 
 // Navbar
 $navbar-nav-link-padding-x: 1rem;
-
-// Carousel
-$carousel-indicator-height: 5px;

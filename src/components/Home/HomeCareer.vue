@@ -1,7 +1,7 @@
 <template>
   <section id="career" class="bg-primary pt-5">
     <div class="container">
-      <h4 class="h2 text-white text-center mb-5">Mon parcours professionnel</h4>
+      <h2 class="text-white text-center mb-5">Mon parcours professionnel</h2>
 
       <ul class="carrer-timeline mb-0">
         <career-item

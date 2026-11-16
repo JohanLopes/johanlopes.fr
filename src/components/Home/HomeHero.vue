@@ -6,11 +6,11 @@
           Hey 👋<br />
           je suis <strong class="text-uppercase">Johan Lopes</strong>
         </h1>
-        <h2 class="lead text-white">Concepteur de solutions web</h2>
-        <h3 class="h4 text-light">
+        <p class="h2 lead text-white">Concepteur de solutions web</p>
+        <p class="h4 text-light">
           Conseil et développement de services web<br />
-          Spécialiste des frameworks Symfony & Vue.Js
-        </h3>
+          Spécialiste des frameworks Symfony & Vue.js
+        </p>
       </div>
     </div>
     <div class="hero-mouse">
@@ -21,7 +21,7 @@
 
 <style lang="scss" scoped>
 #hero {
-  background-image: url('@/assets/images/background.jpeg');
+  background-image: url('@/assets/images/background.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

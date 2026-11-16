@@ -1,31 +1,29 @@
-# Johan LOPES
+# johanlopes.fr
 
-This template should help get you started developing with Vue 3 in Vite.
+Site personnel de Johan LOPES : une page unique construite avec Vue 3, Vite et Bootstrap 5 (SCSS).
 
-## Customize configuration
+## Contenu
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+Le contenu éditorial est séparé du code :
 
-## Project Setup
+- `src/assets/datas/career.yaml` : parcours professionnel. Le logo d'une expérience est
+  `src/assets/datas/career/<slug>.png`, ou `<logo>.png` si le champ `logo` est renseigné.
+- `src/assets/datas/customers.yml` : logos clients, attendus en `.png` et `.webp` dans
+  `src/assets/datas/customers/`.
 
-```sh
-bun install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-bun run dev
-```
-
-### Compile and Minify for Production
+## Commandes
 
 ```sh
-bun run build
+bun install      # installe les dépendances
+bun run dev      # serveur de développement
+bun run build    # build de production dans dist/
+bun run preview  # prévisualise le build
+bun run lint     # ESLint (avec correction automatique)
+bun run format   # Prettier sur src/
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+## Déploiement
 
-```sh
-bun run lint
-```
+Chaque push sur `main` lance le workflow `.github/workflows/continous-deployment.yml`, qui vérifie
+le lint, construit le site et le publie sur GitHub Pages. `index.html` y est copié en `404.html`
+pour que les URL profondes comme `/legal-notices` fonctionnent en accès direct.

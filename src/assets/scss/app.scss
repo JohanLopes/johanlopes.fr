@@ -52,14 +52,20 @@
 @import 'bootstrap/scss/helpers';
 @import 'bootstrap/scss/utilities/api';
 
-// Fonts
-@import '@fortawesome/fontawesome-free/scss/fontawesome';
-@import '@fortawesome/fontawesome-free/scss/solid';
-//@import "@fortawesome/fontawesome-free/scss/regular";
-@import '@fortawesome/fontawesome-free/scss/brands';
-
 @import 'transitions';
 @import 'aside';
+
+// Icônes SVG en ligne (src/components/Icon)
+.icon {
+  height: 1em;
+  width: 1em;
+  vertical-align: -0.125em;
+}
+
+// Supprimée dans Bootstrap 5
+.text-justify {
+  text-align: justify;
+}
 
 body {
   position: relative;

@@ -8,12 +8,20 @@
         />
       </router-link>
 
-      <button class="navbar-toggler" type="button" title="Menu" @click="toggleMenu">
+      <button
+        class="navbar-toggler"
+        type="button"
+        title="Menu"
+        aria-label="Menu"
+        aria-controls="topbar-menu"
+        :aria-expanded="showMenuCollapsed"
+        @click="toggleMenu"
+      >
         <span class="navbar-toggler-icon" />
       </button>
 
-      <div class="navbar-collapse collapse" :class="{ show: showMenuCollapsed }">
-        <ul class="navbar-nav ms-auto">
+      <div id="topbar-menu" class="navbar-collapse collapse" :class="{ show: showMenuCollapsed }">
+        <ul class="navbar-nav ms-auto" @click="closeMenu">
           <li class="nav-item">
             <router-link :to="{ name: 'homepage', hash: '#about' }" class="nav-link">
               Qui suis-je ?
@@ -69,6 +77,10 @@ const affixTopbar = () => {
 const toggleMenu = () => {
   showMenuCollapsed.value = !showMenuCollapsed.value
 }
+
+const closeMenu = () => {
+  showMenuCollapsed.value = false
+}
 </script>
 
 <style lang="scss" scoped>
@@ -89,27 +101,12 @@ const toggleMenu = () => {
     padding: 0;
   }
 
-  .navbar-title {
-    color: #333;
-    font-size: 17px;
-    margin: 0;
-    line-height: 20px;
-
-    small {
-      color: #999;
-    }
-  }
-
   .navbar-nav {
     .nav-link {
       margin-left: $navbar-nav-link-padding-x;
       margin-right: $navbar-nav-link-padding-x;
       padding-left: 0;
       padding-right: 0;
-
-      &.active {
-        border-bottom: 2px solid $red;
-      }
     }
   }
 
@@ -123,7 +120,7 @@ const toggleMenu = () => {
       }
     }
 
-    @include media-breakpoint-down('sm') {
+    @include media-breakpoint-down('md') {
       .navbar-collapse {
         margin-top: 20px;
         background: rgb(240, 240, 240);
@@ -149,11 +146,7 @@ const toggleMenu = () => {
       }
     }
 
-    .navbar-title {
-      display: none;
-    }
-
-    @include media-breakpoint-down('sm') {
+    @include media-breakpoint-down('md') {
       .navbar-collapse {
         margin-top: 20px;
         background: rgb(0, 0, 0);

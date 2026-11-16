@@ -1,20 +1,23 @@
-import pluginVue from 'eslint-plugin-vue'
+import { defineConfig } from 'eslint/config'
+import js from '@eslint/js'
+import eslintPluginVue from 'eslint-plugin-vue'
 import globals from 'globals'
+import eslintConfigPrettier from 'eslint-config-prettier'
 
-export default [
-  // add more generic rulesets here, such as:
-  // js.configs.recommended,
-  ...pluginVue.configs['flat/recommended'],
+export default defineConfig([
   {
-    rules: {
-      // override/add rules settings here, such as:
-      // 'vue/no-unused-vars': 'error'
-    },
+    ignores: ['dist'],
+  },
+  js.configs.recommended,
+  eslintPluginVue.configs['flat/recommended'],
+  eslintConfigPrettier,
+  {
     languageOptions: {
+      ecmaVersion: 'latest',
       sourceType: 'module',
       globals: {
         ...globals.browser,
       },
     },
   },
-]
+])

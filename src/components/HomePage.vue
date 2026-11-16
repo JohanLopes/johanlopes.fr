@@ -5,7 +5,11 @@
     <HomeAbout />
     <HomeCareer />
     <HomeContact />
-    <router-view />
+    <router-view v-slot="{ Component }">
+      <Transition name="slide">
+        <component :is="Component" />
+      </Transition>
+    </router-view>
   </div>
 </template>
 

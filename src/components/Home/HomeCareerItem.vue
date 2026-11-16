@@ -7,7 +7,7 @@
         <h3 class="text-primary mb-1">
           {{ experience.position }}
         </h3>
-        <h6 class="text-muted"><i class="fa fa-building me-2" /> {{ experience.company }}</h6>
+        <p class="h6 text-muted"><IconBuilding class="me-2" /> {{ experience.company }}</p>
       </div>
       <div class="col text-md-end">
         <p class="mb-1">
@@ -24,7 +24,7 @@
     </div>
 
     <!-- eslint-disable vue/no-v-html -->
-    <div v-if="experience.context" class="text-gray-500 fst-italic" v-html="formattedContext" />
+    <div v-if="experience.context" class="fst-italic" v-html="formattedContext" />
 
     <!-- eslint-disable vue/no-v-html -->
     <div v-if="experience.description" class="text-black" v-html="formattedDescription" />
@@ -43,6 +43,7 @@
 <script setup>
 import { computed } from 'vue'
 import { marked } from 'marked'
+import IconBuilding from '@/components/Icon/IconBuilding.vue'
 
 const props = defineProps({
   experience: {
@@ -51,15 +52,33 @@ const props = defineProps({
   },
 })
 
+// Les dates du YAML sont interprétées à minuit UTC : on les formate en UTC
+// pour ne pas glisser au mois précédent selon le fuseau du visiteur
 const dateFormatter = new Intl.DateTimeFormat('fr-FR', {
   year: 'numeric',
   month: 'long',
+  timeZone: 'UTC',
 })
 
-const durationFormatter = new Intl.DurationFormat('fr-FR', { style: 'long' })
+// Intl.DurationFormat n'est pas disponible sur tous les navigateurs
+const durationFormatter =
+  typeof Intl.DurationFormat === 'function'
+    ? new Intl.DurationFormat('fr-FR', { style: 'long' })
+    : null
+
+const formatDurationFallback = ({ years, months }) => {
+  const parts = []
+  if (years > 0) parts.push(`${years} ${years > 1 ? 'ans' : 'an'}`)
+  if (months > 0) parts.push(`${months} mois`)
+  return parts.join(' et ')
+}
 
 const logoUrl = computed(
-  () => new URL(`../../assets/datas/career/${props.experience.slug}.png`, import.meta.url).href,
+  () =>
+    new URL(
+      `../../assets/datas/career/${props.experience.logo || props.experience.slug}.png`,
+      import.meta.url,
+    ).href,
 )
 const formattedStartDate = computed(() => dateFormatter.format(props.experience.startDate))
 const formattedEndDate = computed(() =>
@@ -70,20 +89,31 @@ const formattedDescription = computed(() => marked.parse(props.experience.descri
 
 const formattedDuration = computed(() => {
   const start = props.experience.startDate
-  const end = props.experience.endDate || new Date()
+  let end
 
-  let years = end.getFullYear() - start.getFullYear()
-  let months = end.getMonth() - start.getMonth()
-
-  if (months < 0) {
-    years--
-    months += 12
+  if (props.experience.endDate) {
+    // Le jour de fin est inclus dans la mission
+    end = new Date(props.experience.endDate)
+    end.setUTCDate(end.getUTCDate() + 1)
+  } else {
+    const today = new Date()
+    end = new Date(Date.UTC(today.getFullYear(), today.getMonth(), today.getDate()))
   }
 
-  return durationFormatter.format({
-    years: years,
-    months: months,
-  })
+  let months =
+    (end.getUTCFullYear() - start.getUTCFullYear()) * 12 + (end.getUTCMonth() - start.getUTCMonth())
+
+  if (end.getUTCDate() < start.getUTCDate()) {
+    months--
+  }
+
+  if (months < 1) {
+    return "moins d'un mois"
+  }
+
+  const duration = { years: Math.floor(months / 12), months: months % 12 }
+
+  return durationFormatter ? durationFormatter.format(duration) : formatDurationFallback(duration)
 })
 </script>
 
